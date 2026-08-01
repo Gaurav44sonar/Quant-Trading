@@ -1,0 +1,17 @@
+ticker,group
+AAPL,volatile
+MSFT,volatile
+AMZN,volatile
+GOOGL,volatile
+GOOG,volatile
+META,volatile
+NVDA,volatile
+TSLA,volatile
+AVGO,nonvolatile
+ADBE,nonvolatile
+NFLX,nonvolatile
+AMD,nonvolatile
+INTC,nonvolatile
+QCOM,nonvolatile
+TXN,nonvolatile
+CSCO,nonvolatile

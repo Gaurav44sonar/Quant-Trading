@@ -1,0 +1,163 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: INDIA - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : INDIA
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-22 13:17:18
+End Time                : 2026-07-22 15:20:54
+Duration                : 02:03:36
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 78.12%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.23%          -0.23%
+Cumulative Return                        0.00%          -0.24%          -0.24%
+Best Trade                               0.00%           0.45%           0.45%
+Worst Trade                              0.00%          -1.13%          -1.13%
+Total P&L                                ₹0.00        ₹-226.98        ₹-226.98
+CAGR (annualized)                        0.00%         -44.91%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -6.11           -6.11
+Sortino Ratio                             0.00          -17.72          -17.72
+Max Drawdown                             0.00%          -1.84%          -1.84%
+Volatility (Ann.)                        0.00%           9.41%           9.41%
+Win Rate                                 0.00%          60.00%          60.00%
+Win/Loss Ratio                            0.00            0.25            0.25
+Avg Win                                  0.00%           0.23%           0.23%
+Avg Loss                                 0.00%          -0.92%          -0.92%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:43:05        01:43:05
+Avg Time to MFE (min)                      0.0           115.2           115.2
+Avg Time to MAE (min)                      0.0            90.8            90.8
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AARTIIND.NS, BANDHANBNK.NS, BHEL.NS, PAYTM.NS, TRENT.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.23%          -0.23%
+Cumulative Return                        0.00%          -0.24%          -0.24%
+Best Trade                               0.00%           0.45%           0.45%
+Worst Trade                              0.00%          -1.13%          -1.13%
+Total P&L                                ₹0.00        ₹-226.98        ₹-226.98
+CAGR (annualized)                        0.00%         -44.91%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -6.11           -6.11
+Sortino Ratio                             0.00          -17.72          -17.72
+Max Drawdown                             0.00%          -1.84%          -1.84%
+Volatility (Ann.)                        0.00%           9.41%           9.41%
+Win Rate                                 0.00%          60.00%          60.00%
+Win/Loss Ratio                            0.00            0.25            0.25
+Avg Win                                  0.00%           0.23%           0.23%
+Avg Loss                                 0.00%          -0.92%          -0.92%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:43:05        01:43:05
+Avg Time to MFE (min)                      0.0           115.2           115.2
+Avg Time to MAE (min)                      0.0            90.8            90.8
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                ₹0.00           ₹0.00           ₹0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+PAYTM.NS       | 1        | 0      | 1        | 0.0%       | ₹-137.51     | ₹0.00          | ₹137.51        | 02:01:18     | -0.14%       | +60.6%      
+BANDHANBNK.NS  | 1        | 0      | 1        | 0.0%       | ₹-224.57     | ₹0.00          | ₹224.57        | 01:45:43     | -0.22%       | +98.9%      
+AARTIIND.NS    | 1        | 1      | 0        | 100.0%     | ₹+18.00      | ₹18.00         | ₹0.00          | 02:01:18     | +0.02%       | -7.9%       
+TRENT.NS       | 1        | 1      | 0        | 100.0%     | ₹+28.30      | ₹28.30         | ₹0.00          | 02:01:18     | +0.03%       | -12.5%      
+BHEL.NS        | 1        | 1      | 0        | 100.0%     | ₹+88.80      | ₹88.80         | ₹0.00          | 02:01:18     | +0.09%       | -39.1%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : AARTIIND.NS, ABB.NS, ADANIGREEN.NS, ADANIPOWER.NS, BALKRISIND.NS, BANDHANBNK.NS, BANKINDIA.NS, BHEL.NS, BIOCON.NS, CLEAN.NS, COFORGE.NS, DEEPAKNTR.NS, DIXON.NS, DLF.NS, GODREJPROP.NS, GRANULES.NS, HCLTECH.NS, ICICIPRULI.NS, INDIANB.NS, INFY.NS, IPCALAB.NS, JPPOWER.NS, KAYNES.NS, LALPATHLAB.NS, LTTS.NS, MANAPPURAM.NS, NATIONALUM.NS, OBEROIRLTY.NS, PAYTM.NS, PERSISTENT.NS, PHOENIXLTD.NS, POLICYBZR.NS, PRESTIGE.NS, RBLBANK.NS, TECHM.NS, TORNTPHARM.NS, TRENT.NS, TRIVENI.NS, UNIONBANK.NS, ZEEL.NS
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-22 13:18:43
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : INDIA
+Universe Type           : VOLATILE
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment\Indian_log_volatile\INDIA_VOLATILE_20260722_131718.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.14
+Average Sentiment Score : +0.19
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 86
+Duplicate Articles Duped: 34
+Confirmed Trades        : 5
+Rejected Trades (Negative): 0
+Held Trades (Low Conf)  : 0
+
+Sector Sentiments:
+  - Other          : +0.97
+  - Banking        : +0.00
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+PAYTM.NS   | Other           | +3.26      | +0.97        | +0.14        | 0.93        | CONFIRM    | Confidence score (0.93) meets thres
+BANDHANBNK.NS | Banking         | +2.96      | +0.00        | +0.14        | 0.71        | CONFIRM    | Confidence score (0.71) meets thres
+AARTIIND.NS | Other           | +0.71      | +0.00        | +0.14        | 0.69        | CONFIRM    | Confidence score (0.69) meets thres
+TRENT.NS   | Other           | +0.63      | +0.00        | +0.14        | 0.68        | CONFIRM    | Confidence score (0.68) meets thres
+BHEL.NS    | Other           | +0.20      | +0.00        | +0.14        | 0.62        | CONFIRM    | Confidence score (0.62) meets thres

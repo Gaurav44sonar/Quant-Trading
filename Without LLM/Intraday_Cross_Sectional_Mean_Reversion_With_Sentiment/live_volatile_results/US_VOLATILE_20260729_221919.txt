@@ -1,0 +1,133 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-29 12:49:19
+End Time                : 2026-07-29 14:49:39
+Duration                : 02:00:19
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 77.69%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           2.44%           2.44%
+Cumulative Return                        0.00%           2.44%           2.44%
+Best Trade                               0.00%           2.79%           2.79%
+Worst Trade                              0.00%           2.09%           2.09%
+Total P&L                                $0.00        $2433.84        $2433.84
+CAGR (annualized)                        0.00%       43239.31%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          110.11          110.11
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           5.58%           5.58%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           2.44%           2.44%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:12:38        01:12:38
+Avg Time to MFE (min)                      0.0            77.6            77.6
+Avg Time to MAE (min)                      0.0            67.6            67.6
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : LCID, SEDG
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           2.44%           2.44%
+Cumulative Return                        0.00%           2.44%           2.44%
+Best Trade                               0.00%           2.79%           2.79%
+Worst Trade                              0.00%           2.09%           2.09%
+Total P&L                                $0.00        $2433.84        $2433.84
+CAGR (annualized)                        0.00%       43239.31%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          110.11          110.11
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           5.58%           5.58%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           2.44%           2.44%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:12:38        01:12:38
+Avg Time to MFE (min)                      0.0            77.6            77.6
+Avg Time to MAE (min)                      0.0            67.6            67.6
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+SEDG           | 1        | 1      | 0        | 100.0%     | $+1,387.78   | $1387.78       | $0.00          | 01:07:38     | +1.39%       | +57.0%      
+LCID           | 1        | 1      | 0        | 100.0%     | $+1,046.06   | $1046.06       | $0.00          | 01:27:38     | +1.05%       | +43.0%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMAT, AMBA, AMD, AMKR, ARM, BTBT, BTDR, CEVA, CIFR, CLSK, FORM, GFAI, HUT, INTC, IOVA, IREN, KLAC, LCID, LITE, LRCX, MARA, MKSI, MTSI, MU, MVIS, OPEN, RGTI, RIOT, RMBS, RPD, SEDG, SITM, SMPL, SMTC, SPWR, TENB, VIAV, WIMI
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-29 12:50:54
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment\live_volatile_results\US_VOLATILE_20260729_221919.txt

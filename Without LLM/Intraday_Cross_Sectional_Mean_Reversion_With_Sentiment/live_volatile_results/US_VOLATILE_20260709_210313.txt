@@ -1,0 +1,165 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-09 11:33:13
+End Time                : 2026-07-09 14:35:34
+Duration                : 03:02:21
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 68.91%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.28%          -0.28%
+Cumulative Return                        0.00%          -0.28%          -0.28%
+Best Trade                               0.00%           1.19%           1.19%
+Worst Trade                              0.00%          -1.57%          -1.57%
+Total P&L                                $0.00        $-284.13        $-284.13
+CAGR (annualized)                        0.00%         -51.24%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -4.29           -4.29
+Sortino Ratio                             0.00           -7.06           -7.06
+Max Drawdown                             0.00%          -3.06%          -3.06%
+Volatility (Ann.)                        0.00%          16.74%          16.74%
+Win Rate                                 0.00%          40.00%          40.00%
+Win/Loss Ratio                            0.00            0.80            0.80
+Avg Win                                  0.00%           0.82%           0.82%
+Avg Loss                                 0.00%          -1.02%          -1.02%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:04:52        02:04:52
+Avg Time to MFE (min)                      0.0           110.6           110.6
+Avg Time to MAE (min)                      0.0           161.7           161.7
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AMBA, BTDR, LCID, RIOT, RUN
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.28%          -0.28%
+Cumulative Return                        0.00%          -0.28%          -0.28%
+Best Trade                               0.00%           1.19%           1.19%
+Worst Trade                              0.00%          -1.57%          -1.57%
+Total P&L                                $0.00        $-284.13        $-284.13
+CAGR (annualized)                        0.00%         -51.24%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -4.29           -4.29
+Sortino Ratio                             0.00           -7.06           -7.06
+Max Drawdown                             0.00%          -3.06%          -3.06%
+Volatility (Ann.)                        0.00%          16.74%          16.74%
+Win Rate                                 0.00%          40.00%          40.00%
+Win/Loss Ratio                            0.00            0.80            0.80
+Avg Win                                  0.00%           0.82%           0.82%
+Avg Loss                                 0.00%          -1.02%          -1.02%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:04:52        02:04:52
+Avg Time to MFE (min)                      0.0           110.6           110.6
+Avg Time to MAE (min)                      0.0           161.7           161.7
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+RUN            | 1        | 0      | 1        | 0.0%       | $-24.57      | $0.00          | $24.57         | 03:01:47     | -0.02%       | +8.6%       
+BTDR           | 1        | 1      | 0        | 100.0%     | $+237.11     | $237.11        | $0.00          | 02:46:32     | +0.24%       | -83.5%      
+AMBA           | 1        | 0      | 1        | 0.0%       | $-313.41     | $0.00          | $313.41        | 03:01:46     | -0.31%       | +110.3%     
+RIOT           | 1        | 0      | 1        | 0.0%       | $-272.75     | $0.00          | $272.75        | 03:01:46     | -0.27%       | +96.0%      
+LCID           | 1        | 1      | 0        | 100.0%     | $+89.49      | $89.49         | $0.00          | 03:01:45     | +0.09%       | -31.5%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMAT, AMBA, AMKR, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, DIOD, ENPH, FORM, HAIN, HUT, INTC, IREN, KLAC, LCID, LITE, LRCX, MARA, MRVL, MSTR, MU, MVIS, ON, RGTI, RIOT, RMBS, RUN, SEDG, SITM, SMTC, SPWR, VIAV, WKHS
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-09 11:33:30
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Broker position retrieval failed on flatten: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/positions (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024A15035110>: Failed to resolve 'paper-api.alpaca.markets' ([Errno 11001] getaddrinfo failed)"))
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_volatile_results\US_VOLATILE_20260709_210313.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.15
+Average Sentiment Score : -0.05
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 141
+Duplicate Articles Duped: 26
+Confirmed Trades        : 5
+Rejected Trades (Negative): 0
+Held Trades (Low Conf)  : 0
+
+Sector Sentiments:
+  - CleanEnergy    : +0.32
+  - Crypto         : -0.09
+  - Other          : +0.00
+  - EV             : -0.36
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+RUN        | CleanEnergy     | +2.93      | +0.32        | +0.15        | 0.78        | CONFIRM    | Confidence score (0.78) meets thres
+BTDR       | Crypto          | +1.84      | +0.10        | +0.15        | 0.71        | CONFIRM    | Confidence score (0.71) meets thres
+AMBA       | Other           | +1.61      | +0.00        | +0.15        | 0.69        | CONFIRM    | Confidence score (0.69) meets thres
+RIOT       | Crypto          | +1.51      | -0.28        | +0.15        | 0.64        | CONFIRM    | Confidence score (0.64) meets thres
+LCID       | EV              | +1.33      | -0.36        | +0.15        | 0.59        | CONFIRM    | Confidence score (0.59) meets thres

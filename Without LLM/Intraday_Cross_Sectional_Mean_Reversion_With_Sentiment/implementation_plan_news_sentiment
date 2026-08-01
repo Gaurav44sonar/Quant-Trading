@@ -1,0 +1,134 @@
+# News Sentiment Integration Plan
+
+This plan outlines the design and integration workflow for adding **Live News Sentiment Analysis** as an alpha factor and a risk filter in the Intraday Cross-Sectional Mean Reversion trading strategy.
+
+---
+
+## Evaluation: Is this a Good Idea?
+
+**Yes, integrating news sentiment is an excellent idea for this strategy, but it must be used strategically.**
+
+### Why it works well with Mean Reversion:
+1. **Regime Identification (Catalyst vs. Noise):** Mean reversion strategies perform best on *noise-driven* price moves (liquidity imbalances, temporary order flow overruns). They perform poorly on *information-driven* price moves (fundamental news like earnings releases, FDA clearances, merger talks). News sentiment allows us to distinguish between the two.
+2. **Avoiding Momentum Traps (The "Freight Train" Filter):** If a stock drops 6% on *no news*, it is a highly profitable mean-reversion buy. If it drops 6% because its CEO resigned and earnings missed, it is a momentum trade and likely to keep falling. Excluding high-news-intensity stocks is a powerful risk guardrail.
+3. **Sentiment-Volume Divergence Alpha:** Identifying situations where price direction diverges from news sentiment (e.g., stock falls despite highly positive news flow) can yield high-conviction signals.
+
+### Key Implementation Challenges:
+* **API Ingestion Latency:** Raw web scraping is too slow and fragile for 5-minute bar execution. We must use structured API endpoints (like Alpaca News API or Finnhub).
+* **Data Sparsity:** Many stocks will have zero news on a typical day. The system must handle missing/null data gracefully without breaking cross-sectional z-score matrices.
+
+---
+
+## Proposed Architecture
+
+```mermaid
+flowchart TD
+    subgraph Ingestion Layer
+        A[Alpaca News API / Finnhub API] -->|Real-Time headlines / summaries| B[News Ingestion Client]
+    end
+
+    subgraph NLP Scoring Layer
+        B -->|JSON payload| C[NLP Sentiment Analyzer]
+        C -->|VADER / FinBERT model| D[Raw Sentiment Scores: -1.0 to +1.0]
+    end
+
+    subgraph Signal Integration Layer
+        D -->|Standardized scores| E[Features Engine: DailySignalEngine / FeatureEngine]
+        E -->|Feature P7: Overnight Sentiment| F[Stock Picker: alpha/stock_picker.py]
+        E -->|Feature G1: Intraday Sentiment Shock| G[Alpha Model: alpha/signal.py]
+    end
+
+    subgraph Risk Guardrail Layer
+        D -->|High Sentiment Intensity Filter| H[Risk Manager: alpha/risk_management.py]
+        H -->|Blacklist stock if sentiment shock > threshold| I[Position Exclusion]
+    end
+```
+
+---
+
+## User Review Required
+
+> [!IMPORTANT]
+> **API Access & Keys:** News APIs require credentials. We suggest using **Alpaca's News API** because the project already integrates with Alpaca, meaning it is accessible via existing connections and doesn't incur new vendor costs.
+
+> [!WARNING]
+> **FinBERT vs. VADER:** 
+> - **VADER (Recommended):** Extremely fast, lightweight, and requires no external GPU resources or heavy libraries. Fits easily within 5-minute execution cycles.
+> - **FinBERT:** A deep-learning model fine-tuned for financial sentiment. It is highly accurate but requires a GPU or longer processing times, which could cause latency spikes.
+
+---
+
+## Open Questions
+
+1. **How should we treat missing sentiment data?**
+   - *Option A (Recommended):* Fill missing sentiment values with `0.0` (neutral sentiment) after cross-sectional normalization so they do not impact portfolio weights.
+   - *Option B:* Drop stocks with missing sentiment data entirely (will heavily reduce the trading universe).
+2. **What historical lookback do you want for backtesting?**
+   - Historical news data requires a subscription. Do you have a premium Alpaca or Polygon key to retrieve historical news, or will we focus on live trading/forward paper-trading first?
+
+---
+
+## Proposed Changes
+
+### 1. Configuration Master
+#### [MODIFY] [config.yaml](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/config/config.yaml)
+* Add news API settings, sentiment thresholds, NLP model selection, and feature weights.
+```yaml
+news_sentiment:
+  api_provider: "alpaca"      # alpaca / finnhub
+  nlp_model: "vader"          # vader / finbert
+  overnight_lookback_hours: 15
+  intraday_lookback_bars: 12   # 1 hour of 5m bars
+  min_relevance: 0.7          # Filter out low-relevance articles
+  exclusion_threshold: 0.8    # Blacklist stock if absolute sentiment exceeds this
+```
+
+### 2. Ingestion & NLP Engine
+#### [NEW] [news_fetcher.py](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/nse_pipeline/news_fetcher.py)
+* Establish `AlpacaNewsFetcher` to retrieve headlines and text snippets.
+* Cache retrieved news locally in `data/news/` to avoid redundant API hits.
+
+#### [NEW] [sentiment_nlp.py](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/features/sentiment_nlp.py)
+* Establish `SentimentAnalyzer` using VADER or FinBERT.
+* Input: news texts. Output: scalar score between `-1.0` (bearish) and `1.0` (bullish).
+
+### 3. Quantitative Signal Layer
+#### [MODIFY] [daily_signals.py](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/features/daily_signals.py)
+* Add `P7_news_sentiment` to `compute_preopen_signals`. It aggregates overnight sentiment to inform the morning stock picker.
+```python
+def _overnight_sentiment(self, target_date: pd.Timestamp) -> pd.Series:
+    # Fetch news from target_date-1 close to target_date 9:30 AM
+    # Score sentiment and return a Series indexed by ticker
+```
+
+#### [MODIFY] [engine.py](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/features/engine.py)
+* Add `G1_sentiment_shock` to `FeatureEngine.compute_all` for 5-minute live updates.
+```python
+def sentiment_shock(self) -> pd.DataFrame:
+    # Computes rolling 12-bar sentiment change
+    # Return cs_zscore(signal)
+```
+
+### 4. Portfolio & Risk Execution
+#### [MODIFY] [stock_picker.py](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/alpha/stock_picker.py)
+* Inside `_apply_filters`, read overnight news sentiment. If a stock has extreme sentiment ($|S| > 0.8$), remove it from candidate picks.
+
+#### [MODIFY] [risk_management.py](file:///c:/My%20Programs/Internship/Herbs%20Magic/GS/Intraday_Cross_Sectional_Mean_Reversion/alpha/risk_management.py)
+* Introduce an intraday sentiment kill-switch. If a stock has an active trade and sudden negative news breaks (sentiment drops below `-0.8`), execute a market exit immediately.
+
+---
+
+## Verification Plan
+
+### Automated Tests
+* Create unit tests under `tests/test_news.py` to:
+  - Mock news API responses.
+  - Verify that `VADER` returns high/low values for positive/negative text samples.
+  - Check that cross-sectional normalizer handles missing ticker news gracefully.
+
+### Manual Verification
+* Execute a paper trading dry run:
+  ```bash
+  python run_live_volatile.py --dry-run --picks 5
+  ```
+  Check `reports/live_volatile_run_<timestamp>.log` to verify news ingestion logs, sentiment scores, and stock pick updates.

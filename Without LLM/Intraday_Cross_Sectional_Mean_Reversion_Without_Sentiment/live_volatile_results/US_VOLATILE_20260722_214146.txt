@@ -1,0 +1,136 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-22 12:11:46
+End Time                : 2026-07-22 13:21:49
+Duration                : 01:10:03
+Execution Status        : MANUAL_STOP
+Exposure %              : 82.08%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.04%          -0.04%
+Cumulative Return                        0.00%          -0.04%          -0.04%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%          -0.20%          -0.20%
+Total P&L                                $0.00         $-40.28         $-40.28
+CAGR (annualized)                        0.00%          -9.68%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -7.94           -7.94
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%          -0.20%          -0.20%
+Volatility (Ann.)                        0.00%           1.28%           1.28%
+Win Rate                                 0.00%          80.00%          80.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%          -0.20%          -0.20%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:55:24        00:55:24
+Avg Time to MFE (min)                      0.0            55.4            55.4
+Avg Time to MAE (min)                      0.0            55.4            55.4
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : CIFR, IOVA, LRCX, MARA, RPD
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.04%          -0.04%
+Cumulative Return                        0.00%          -0.04%          -0.04%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%          -0.20%          -0.20%
+Total P&L                                $0.00         $-40.28         $-40.28
+CAGR (annualized)                        0.00%          -9.68%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -7.94           -7.94
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%          -0.20%          -0.20%
+Volatility (Ann.)                        0.00%           1.28%           1.28%
+Win Rate                                 0.00%          80.00%          80.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%          -0.20%          -0.20%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:55:24        00:55:24
+Avg Time to MFE (min)                      0.0            55.4            55.4
+Avg Time to MAE (min)                      0.0            55.4            55.4
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+RPD            | 1        | 0      | 1        | 0.0%       | $-40.28      | $0.00          | $40.28         | 00:02:13     | -0.04%       | +100.0%     
+IOVA           | 1        | 1      | 0        | 100.0%     | $+0.00       | $0.00          | $0.00          | 01:08:42     | +0.00%       | -0.0%       
+MARA           | 1        | 1      | 0        | 100.0%     | $+0.00       | $0.00          | $0.00          | 01:08:42     | +0.00%       | -0.0%       
+CIFR           | 1        | 1      | 0        | 100.0%     | $+0.00       | $0.00          | $0.00          | 01:08:41     | +0.00%       | -0.0%       
+LRCX           | 1        | 1      | 0        | 100.0%     | $+0.00       | $0.00          | $0.00          | 01:08:41     | +0.00%       | -0.0%       
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMAT, AMBA, AMKR, ARM, ARQQ, BTBT, BTDR, CEVA, CIFR, CLSK, CMPS, FORM, HUT, INTC, IOVA, IREN, KLAC, LCID, LITE, LRCX, MARA, MKSI, MRNA, MRVL, MU, MVIS, OPEN, PRCT, RIOT, RIVN, RMBS, RPD, RXRX, SEDG, SITM, SMTC, SPWR, TENB
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-22 12:12:33
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : MANUAL_STOP
+Duration Completed Flag : False
+Manual Stop Flag        : True
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion_Without_Sentiment\live_volatile_results\US_VOLATILE_20260722_214146.txt

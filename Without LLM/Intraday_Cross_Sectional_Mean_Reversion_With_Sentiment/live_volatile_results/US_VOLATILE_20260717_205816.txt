@@ -1,0 +1,166 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-17 11:28:16
+End Time                : 2026-07-17 14:46:44
+Duration                : 03:18:27
+Execution Status        : MANUAL_STOP
+Exposure %              : 36.30%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           2.84%           2.84%
+Cumulative Return                        0.00%           2.84%           2.84%
+Best Trade                               0.00%           4.06%           4.06%
+Worst Trade                              0.00%           1.86%           1.86%
+Total P&L                                $0.00        $2828.60        $2828.60
+CAGR (annualized)                        0.00%      116498.43%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           58.31           58.31
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%          12.27%          12.27%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           2.84%           2.84%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:49:03        00:49:03
+Avg Time to MFE (min)                      0.0            55.2            55.2
+Avg Time to MAE (min)                      0.0            42.7            42.7
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AMD, CEVA, CIFR, DIOD, HUT, SITM
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           2.84%           2.84%
+Cumulative Return                        0.00%           2.84%           2.84%
+Best Trade                               0.00%           4.06%           4.06%
+Worst Trade                              0.00%           1.86%           1.86%
+Total P&L                                $0.00        $2828.60        $2828.60
+CAGR (annualized)                        0.00%      116498.43%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           58.31           58.31
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%          12.27%          12.27%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           2.84%           2.84%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:49:03        00:49:03
+Avg Time to MFE (min)                      0.0            55.2            55.2
+Avg Time to MAE (min)                      0.0            42.7            42.7
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+HUT            | 1        | 1      | 0        | 100.0%     | $+673.44     | $673.44        | $0.00          | 00:38:31     | +0.67%       | +23.8%      
+DIOD           | 1        | 1      | 0        | 100.0%     | $+308.91     | $308.91        | $0.00          | 02:03:30     | +0.31%       | +10.9%      
+CEVA           | 1        | 1      | 0        | 100.0%     | $+486.17     | $486.17        | $0.00          | 02:13:30     | +0.49%       | +17.2%      
+SITM           | 1        | 1      | 0        | 100.0%     | $+387.81     | $387.81        | $0.00          | 00:53:30     | +0.39%       | +13.7%      
+CIFR           | 1        | 1      | 0        | 100.0%     | $+597.62     | $597.62        | $0.00          | 00:48:29     | +0.60%       | +21.1%      
+AMD            | 1        | 1      | 0        | 100.0%     | $+374.65     | $374.65        | $0.00          | 01:03:29     | +0.37%       | +13.2%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMAT, AMD, AMKR, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, DIOD, HAIN, HUT, INTC, IOVA, KLAC, LCID, LITE, LRCX, MARA, MKSI, MRNA, MRVL, MTSI, MVIS, ON, OPEN, PLUG, PRCT, QUBT, RGTI, RIVN, RMBS, SEDG, SITM, SPWR, WKHS
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-17 11:31:14
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : MANUAL_STOP
+Duration Completed Flag : False
+Manual Stop Flag        : True
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment\live_volatile_results\US_VOLATILE_20260717_205816.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.00
+Average Sentiment Score : +0.19
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 163
+Duplicate Articles Duped: 24
+Confirmed Trades        : 6
+Rejected Trades (Negative): 0
+Held Trades (Low Conf)  : 0
+
+Sector Sentiments:
+  - Crypto         : +0.30
+  - Other          : +0.22
+  - Semiconductor  : +0.11
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+HUT        | Crypto          | +1.80      | +0.42        | +0.00        | 0.77        | CONFIRM    | Confidence score (0.77) meets thres
+DIOD       | Other           | +1.77      | +0.00        | +0.00        | 0.70        | CONFIRM    | Confidence score (0.70) meets thres
+CEVA       | Other           | +1.51      | +0.45        | +0.00        | 0.76        | CONFIRM    | Confidence score (0.76) meets thres
+SITM       | Other           | +1.33      | +0.00        | +0.00        | 0.68        | CONFIRM    | Confidence score (0.68) meets thres
+CIFR       | Crypto          | +1.28      | +0.19        | +0.00        | 0.71        | CONFIRM    | Confidence score (0.71) meets thres
+AMD        | Semiconductor   | +0.91      | +0.11        | +0.00        | 0.65        | CONFIRM    | Confidence score (0.65) meets thres

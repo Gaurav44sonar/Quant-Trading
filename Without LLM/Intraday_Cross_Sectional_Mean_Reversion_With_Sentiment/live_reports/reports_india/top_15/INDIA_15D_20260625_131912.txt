@@ -1,0 +1,144 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: INDIA - 15D
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : INDIA
+Universe Type           : 15D
+Total Universe Size     : 158 Stocks
+Start Time              : 2026-06-25 13:19:12
+End Time                : 2026-06-25 15:20:38
+Duration                : 02:01:26
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 69.47%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.61%          -0.61%
+Cumulative Return                        0.00%          -0.57%          -0.57%
+Best Trade                               0.00%           1.29%           1.29%
+Worst Trade                              0.00%          -2.37%          -2.37%
+Total P&L                                ₹0.00        ₹-518.99        ₹-518.99
+CAGR (annualized)                        0.00%         -76.25%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          -10.05          -10.05
+Sortino Ratio                             0.00          -15.92          -15.92
+Max Drawdown                             0.00%          -7.98%          -7.98%
+Volatility (Ann.)                        0.00%          15.39%          15.39%
+Win Rate                                 0.00%          23.08%          23.08%
+Win/Loss Ratio                            0.00            0.78            0.78
+Avg Win                                  0.00%           0.82%           0.82%
+Avg Loss                                 0.00%          -1.04%          -1.04%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:31:49        01:31:49
+Avg Time to MFE (min)                      0.0            98.6            98.6
+Avg Time to MAE (min)                      0.0            88.7            88.7
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AARTIIND.NS, GRANULES.NS, KAYNES.NS, MANAPPURAM.NS, MUTHOOTFIN.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.00%          -0.00%
+Cumulative Return                        0.00%           0.05%           0.05%
+Best Trade                               0.00%           1.29%           1.29%
+Worst Trade                              0.00%          -1.56%          -1.56%
+Total P&L                                ₹0.00          ₹16.06          ₹16.06
+CAGR (annualized)                        0.00%          12.44%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -0.01           -0.01
+Sortino Ratio                             0.00           -0.03           -0.03
+Max Drawdown                             0.00%          -1.59%          -1.59%
+Volatility (Ann.)                        0.00%          16.98%          16.98%
+Win Rate                                 0.00%          60.00%          60.00%
+Win/Loss Ratio                            0.00            0.67            0.67
+Avg Win                                  0.00%           0.82%           0.82%
+Avg Loss                                 0.00%          -1.23%          -1.23%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:04:41        01:04:41
+Avg Time to MFE (min)                      0.0           102.9           102.9
+Avg Time to MAE (min)                      0.0            36.8            36.8
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : BEL.NS, COALINDIA.NS, HEROMOTOCO.NS, JSWSTEEL.NS, NTPC.NS, POWERGRID.NS, SBILIFE.NS, TATAPOWER.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -1.00%          -1.00%
+Cumulative Return                        0.00%          -0.94%          -0.94%
+Best Trade                               0.00%          -0.12%          -0.12%
+Worst Trade                              0.00%          -2.37%          -2.37%
+Total P&L                                ₹0.00        ₹-535.04        ₹-535.04
+CAGR (annualized)                        0.00%         -90.82%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          -24.12          -24.12
+Sortino Ratio                             0.00          -24.12          -24.12
+Max Drawdown                             0.00%          -7.97%          -7.97%
+Volatility (Ann.)                        0.00%          10.42%          10.42%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%          -1.00%          -1.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:48:46        01:48:46
+Avg Time to MFE (min)                      0.0            95.9            95.9
+Avg Time to MAE (min)                      0.0           121.1           121.1
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+BEL.NS         | 1        | 0      | 1        | 0.0%       | ₹-79.39      | ₹0.00          | ₹79.39         | 02:01:03     | -0.08%       | +15.3%      
+JSWSTEEL.NS    | 1        | 0      | 1        | 0.0%       | ₹-9.00       | ₹0.00          | ₹9.00          | 02:01:03     | -0.01%       | +1.7%       
+SBILIFE.NS     | 1        | 0      | 1        | 0.0%       | ₹-35.60      | ₹0.00          | ₹35.60         | 02:01:03     | -0.04%       | +6.9%       
+POWERGRID.NS   | 1        | 0      | 1        | 0.0%       | ₹-88.10      | ₹0.00          | ₹88.10         | 02:01:03     | -0.09%       | +17.0%      
+TATAPOWER.NS   | 1        | 0      | 1        | 0.0%       | ₹-85.42      | ₹0.00          | ₹85.42         | 02:01:03     | -0.09%       | +16.5%      
+COALINDIA.NS   | 1        | 0      | 1        | 0.0%       | ₹-25.50      | ₹0.00          | ₹25.50         | 02:01:03     | -0.03%       | +4.9%       
+AARTIIND.NS    | 1        | 1      | 0        | 100.0%     | ₹+22.30      | ₹22.30         | ₹0.00          | 02:01:03     | +0.02%       | -4.3%       
+MANAPPURAM.NS  | 1        | 1      | 0        | 100.0%     | ₹+96.32      | ₹96.32         | ₹0.00          | 02:01:03     | +0.10%       | -18.6%      
+MUTHOOTFIN.NS  | 1        | 0      | 1        | 0.0%       | ₹-96.08      | ₹0.00          | ₹96.08         | 02:01:03     | -0.10%       | +18.5%      
+KAYNES.NS      | 1        | 1      | 0        | 100.0%     | ₹+55.86      | ₹55.86         | ₹0.00          | 02:01:03     | +0.06%       | -10.8%      
+NTPC.NS        | 1        | 0      | 1        | 0.0%       | ₹-92.93      | ₹0.00          | ₹92.93         | 02:01:03     | -0.09%       | +17.9%      
+HEROMOTOCO.NS  | 1        | 0      | 1        | 0.0%       | ₹-119.10     | ₹0.00          | ₹119.10        | 02:01:03     | -0.12%       | +22.9%      
+GRANULES.NS    | 1        | 0      | 1        | 0.0%       | ₹-62.34      | ₹0.00          | ₹62.34         | 02:01:03     | -0.06%       | +12.0%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : 15D
+Volatile Stocks List    : AARTIIND.NS, ADANIGREEN.NS, BALKRISIND.NS, BANDHANBNK.NS, BHEL.NS, CLEAN.NS, COCHINSHIP.NS, GRANULES.NS, GRSE.NS, HINDALCO.NS, IDEA.NS, INFY.NS, KAYNES.NS, LALPATHLAB.NS, MANAPPURAM.NS, MUTHOOTFIN.NS, NATIONALUM.NS, PAYTM.NS, PRESTIGE.NS, RENUKA.NS, SAIL.NS, TRIVENI.NS, UCOBANK.NS, VEDL.NS, ZEEL.NS
+Non-Volatile Stocks List: ACC.NS, ADANIPORTS.NS, ALKEM.NS, APOLLOHOSP.NS, ATUL.NS, AXISBANK.NS, BAJAJ-AUTO.NS, BEL.NS, BHARTIARTL.NS, BIOCON.NS, BRITANNIA.NS, CIPLA.NS, COALINDIA.NS, DABUR.NS, DIVISLAB.NS, DRREDDY.NS, EICHERMOT.NS, FEDERALBNK.NS, GAIL.NS, GODREJCP.NS, GRASIM.NS, HAVELLS.NS, HDFCBANK.NS, HDFCLIFE.NS, HEROMOTOCO.NS, HINDUNILVR.NS, ICICIBANK.NS, INDHOTEL.NS, IRCTC.NS, ITC.NS, JIOFIN.NS, JSWSTEEL.NS, KOTAKBANK.NS, LICHSGFIN.NS, LT.NS, LUPIN.NS, MARICO.NS, MARUTI.NS, NESTLEIND.NS, NHPC.NS, NTPC.NS, PIDILITIND.NS, PNB.NS, POWERGRID.NS, RELIANCE.NS, SBILIFE.NS, SBIN.NS, SUNPHARMA.NS, TATACONSUM.NS, TATAPOWER.NS, TATASTEEL.NS, TORNTPHARM.NS, TVSMOTOR.NS, ULTRACEMCO.NS, UNITDSPR.NS
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-25 13:19:34
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : INDIA
+Universe Type           : 15D
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_india\top_15\INDIA_15D_20260625_131912.txt

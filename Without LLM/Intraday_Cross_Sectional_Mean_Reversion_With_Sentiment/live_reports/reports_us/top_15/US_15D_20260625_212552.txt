@@ -1,0 +1,134 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - 15D
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : 15D
+Total Universe Size     : 304 Stocks
+Start Time              : 2026-06-25 11:55:52
+End Time                : 2026-06-25 15:00:33
+Duration                : 03:04:41
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 70.01%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.80%           0.80%
+Cumulative Return                        0.00%           0.80%           0.80%
+Best Trade                               0.00%           2.62%           2.62%
+Worst Trade                              0.00%          -0.14%          -0.14%
+Total P&L                                $0.00         $796.46         $796.46
+CAGR (annualized)                        0.00%         651.84%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            9.80            9.80
+Sortino Ratio                             0.00          452.42          452.42
+Max Drawdown                             0.00%          -0.23%          -0.23%
+Volatility (Ann.)                        0.00%          20.44%          20.44%
+Win Rate                                 0.00%          33.33%          33.33%
+Win/Loss Ratio                            0.00           22.74           22.74
+Avg Win                                  0.00%           2.62%           2.62%
+Avg Loss                                 0.00%          -0.12%          -0.12%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:10:38        02:10:38
+Avg Time to MFE (min)                      0.0           134.0           134.0
+Avg Time to MAE (min)                      0.0           127.3           127.3
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : MARA
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           2.62%           2.62%
+Cumulative Return                        0.00%           2.62%           2.62%
+Best Trade                               0.00%           2.62%           2.62%
+Worst Trade                              0.00%           2.62%           2.62%
+Total P&L                                $0.00         $871.99         $871.99
+CAGR (annualized)                        0.00%       66961.57%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           2.62%           2.62%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:23:49        00:23:49
+Avg Time to MFE (min)                      0.0            33.8            33.8
+Avg Time to MAE (min)                      0.0            13.8            13.8
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : EQIX, SLAB
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.12%          -0.12%
+Cumulative Return                        0.00%          -0.11%          -0.11%
+Best Trade                               0.00%          -0.09%          -0.09%
+Worst Trade                              0.00%          -0.14%          -0.14%
+Total P&L                                $0.00         $-75.53         $-75.53
+CAGR (annualized)                        0.00%         -25.14%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          -65.45          -65.45
+Sortino Ratio                             0.00          -65.45          -65.45
+Max Drawdown                             0.00%          -0.23%          -0.23%
+Volatility (Ann.)                        0.00%           0.44%           0.44%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%          -0.12%          -0.12%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        03:04:02        03:04:02
+Avg Time to MFE (min)                      0.0           184.0           184.0
+Avg Time to MAE (min)                      0.0           184.0           184.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+MARA           | 1        | 1      | 0        | 100.0%     | $+871.99     | $871.99        | $0.00          | 00:33:49     | +0.87%       | +109.5%     
+EQIX           | 1        | 0      | 1        | 0.0%       | $-46.65      | $0.00          | $46.65         | 03:04:02     | -0.05%       | -5.9%       
+SLAB           | 1        | 0      | 1        | 0.0%       | $-28.88      | $0.00          | $28.88         | 03:04:02     | -0.03%       | -3.6%       
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : 15D
+Volatile Stocks List    : ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, ENPH, GFAI, HAIN, HUT, IREN, LITE, MARA, MRVL, MSTR, MVIS, QUBT, RGTI, RMBS, SEDG, SMCI, SPWR, VUZI
+Non-Volatile Stocks List: AAPL, ABNB, ACAD, AMGN, APLS, BIIB, BMRN, BNTX, CINF, CMCSA, COST, CPRT, CPRX, EA, EBAY, EQIX, EXEL, FOLD, GILD, GRFS, HALO, HSIC, IDXX, IONS, ISRG, JD, KDP, KHC, LAMR, LNTH, MAR, MAXN, MDLZ, MMSI, MNST, MTCH, NBIX, NFLX, NTES, ORLY, PDD, PEP, PGNY, PYPL, REGN, ROST, SBUX, SLAB, TMUS, UDMY, ULTA, UTHR, VRTX, WB, WBD
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-25 11:56:27
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : 15D
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_us\top_15\US_15D_20260625_212552.txt

@@ -1,0 +1,126 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: INDIA - 15D
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : INDIA
+Universe Type           : 15D
+Total Universe Size     : 158 Stocks
+Total Trades            : 22
+Winning Trades          : 13
+Losing Trades           : 9
+Win Rate                : 59.09%
+Profit Factor           : 3.01
+Net PnL                 : $+542.67
+Net Return (%)          : +0.59%
+Gross Profit            : $812.10
+Gross Profit (%)        : 0.89%
+Gross Loss              : $269.43
+Gross Loss (%)          : 0.29%
+Sharpe Ratio            : 7.14
+Sortino Ratio           : 24.26
+Maximum Drawdown        : 0.11%
+Volatility              : 1.24%
+Average Holding Time    : 01:52:19
+Average Trade Duration  : 02:01:58
+Exposure %              : 82.61%
+Start Time              : 2026-06-17 12:51:09
+End Time                : 2026-06-17 14:55:48
+Duration                : 02:04:39
+Execution Status        : DURATION_COMPLETED
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ADANIGREEN.NS, BANDHANBNK.NS, HINDALCO.NS, HINDCOPPER.NS, IDEA.NS, IPCALAB.NS, JPPOWER.NS, LALPATHLAB.NS, NATIONALUM.NS, NMDC.NS, RENUKA.NS, SUZLON.NS, VEDL.NS, VOLTAS.NS
+Total Trades            : 14
+Winning Trades          : 8
+Losing Trades           : 6
+Win Rate                : 57.14%
+Net PnL                 : $+430.10
+Net Return (%)          : +0.73%
+Gross Profit            : $588.83
+Gross Profit (%)        : 1.00%
+Gross Loss              : $158.73
+Gross Loss (%)          : 0.27%
+Profit Factor           : 3.71
+Sharpe Ratio            : 8.33
+Sortino Ratio           : 41.43
+Maximum Drawdown        : 0.00%
+Volatility              : 1.30%
+Average Holding Time    : 01:47:03
+Average Trade Duration  : 02:00:39
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AXISBANK.NS, BEL.NS, CIPLA.NS, JSWSTEEL.NS, MARICO.NS, SBILIFE.NS, SBIN.NS, TATAPOWER.NS
+Total Trades            : 8
+Winning Trades          : 5
+Losing Trades           : 3
+Win Rate                : 62.50%
+Net PnL                 : $+112.57
+Net Return (%)          : +0.35%
+Gross Profit            : $223.27
+Gross Profit (%)        : 0.69%
+Gross Loss              : $110.70
+Gross Loss (%)          : 0.34%
+Profit Factor           : 2.02
+Sharpe Ratio            : 4.92
+Sortino Ratio           : 11.34
+Maximum Drawdown        : 0.00%
+Volatility              : 1.10%
+Average Holding Time    : 02:01:31
+Average Trade Duration  : 02:04:15
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+LALPATHLAB.NS  | 1        | 0      | 1        | 0.0%       | $-13.40      | $0.00          | $13.40         | 02:04:15     | -0.01%       | -2.5%       
+NATIONALUM.NS  | 1        | 1      | 0        | 100.0%     | $+68.04      | $68.04         | $0.00          | 02:04:15     | +0.07%       | +12.5%      
+JSWSTEEL.NS    | 1        | 1      | 0        | 100.0%     | $+38.40      | $38.40         | $0.00          | 02:04:15     | +0.04%       | +7.1%       
+HINDALCO.NS    | 1        | 1      | 0        | 100.0%     | $+105.32     | $105.32        | $0.00          | 02:04:15     | +0.11%       | +19.4%      
+VOLTAS.NS      | 1        | 0      | 1        | 0.0%       | $-43.50      | $0.00          | $43.50         | 02:04:15     | -0.04%       | -8.0%       
+TATAPOWER.NS   | 1        | 1      | 0        | 100.0%     | $+20.90      | $20.90         | $0.00          | 02:04:15     | +0.02%       | +3.9%       
+IPCALAB.NS     | 1        | 0      | 1        | 0.0%       | $-25.80      | $0.00          | $25.80         | 02:04:15     | -0.03%       | -4.8%       
+RENUKA.NS      | 1        | 0      | 1        | 0.0%       | $-38.80      | $0.00          | $38.80         | 02:04:15     | -0.04%       | -7.1%       
+CIPLA.NS       | 1        | 0      | 1        | 0.0%       | $-58.80      | $0.00          | $58.80         | 02:04:15     | -0.06%       | -10.8%      
+IDEA.NS        | 1        | 1      | 0        | 100.0%     | $+94.23      | $94.23         | $0.00          | 02:04:15     | +0.09%       | +17.4%      
+ADANIGREEN.NS  | 1        | 0      | 1        | 0.0%       | $-17.70      | $0.00          | $17.70         | 02:04:15     | -0.02%       | -3.3%       
+NMDC.NS        | 1        | 1      | 0        | 100.0%     | $+7.14       | $7.14          | $0.00          | 02:04:15     | +0.01%       | +1.3%       
+SUZLON.NS      | 1        | 1      | 0        | 100.0%     | $+84.02      | $84.02         | $0.00          | 01:13:47     | +0.08%       | +15.5%      
+BANDHANBNK.NS  | 1        | 0      | 1        | 0.0%       | $-19.53      | $0.00          | $19.53         | 02:04:15     | -0.02%       | -3.6%       
+VEDL.NS        | 1        | 1      | 0        | 100.0%     | $+98.01      | $98.01         | $0.00          | 02:04:15     | +0.10%       | +18.1%      
+JPPOWER.NS     | 1        | 1      | 0        | 100.0%     | $+89.80      | $89.80         | $0.00          | 02:04:15     | +0.09%       | +16.5%      
+BEL.NS         | 1        | 1      | 0        | 100.0%     | $+94.57      | $94.57         | $0.00          | 02:04:15     | +0.09%       | +17.4%      
+HINDCOPPER.NS  | 1        | 1      | 0        | 100.0%     | $+42.27      | $42.27         | $0.00          | 02:04:15     | +0.04%       | +7.8%       
+SBILIFE.NS     | 1        | 1      | 0        | 100.0%     | $+35.00      | $35.00         | $0.00          | 02:04:15     | +0.03%       | +6.4%       
+MARICO.NS      | 1        | 0      | 1        | 0.0%       | $-40.50      | $0.00          | $40.50         | 02:04:15     | -0.04%       | -7.5%       
+AXISBANK.NS    | 1        | 0      | 1        | 0.0%       | $-11.40      | $0.00          | $11.40         | 02:04:15     | -0.01%       | -2.1%       
+SBIN.NS        | 1        | 1      | 0        | 100.0%     | $+34.40      | $34.40         | $0.00          | 02:04:15     | +0.03%       | +6.3%       
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : 15D
+Volatile Stocks List    : AARTIIND.NS, ADANIGREEN.NS, ADANIPOWER.NS, ASHOKLEY.NS, BALKRISIND.NS, BALRAMCHIN.NS, BANDHANBNK.NS, BHEL.NS, CHOLAFIN.NS, CLEAN.NS, COCHINSHIP.NS, COFORGE.NS, CUMMINSIND.NS, GMRAIRPORT.NS, GODREJPROP.NS, HINDALCO.NS, HINDCOPPER.NS, IDEA.NS, IPCALAB.NS, JPPOWER.NS, LALPATHLAB.NS, LTTS.NS, MANAPPURAM.NS, MUTHOOTFIN.NS, NATIONALUM.NS, NMDC.NS, PAYTM.NS, PERSISTENT.NS, POLICYBZR.NS, PRESTIGE.NS, RENUKA.NS, RVNL.NS, SIEMENS.NS, SUZLON.NS, TECHM.NS, TRENT.NS, TRIVENI.NS, VEDL.NS, VOLTAS.NS, ZEEL.NS
+Non-Volatile Stocks List: ACC.NS, ADANIPORTS.NS, APOLLOHOSP.NS, AXISBANK.NS, BAJAJ-AUTO.NS, BEL.NS, BHARTIARTL.NS, BRITANNIA.NS, CDSL.NS, CIPLA.NS, DABUR.NS, DIVISLAB.NS, DRREDDY.NS, EICHERMOT.NS, GAIL.NS, GRASIM.NS, HDFCBANK.NS, HINDUNILVR.NS, ICICIBANK.NS, INDHOTEL.NS, IOB.NS, IRCTC.NS, IRFC.NS, ITC.NS, JSWSTEEL.NS, KOTAKBANK.NS, LT.NS, LUPIN.NS, MARICO.NS, MARUTI.NS, PIDILITIND.NS, POWERGRID.NS, RELIANCE.NS, SBILIFE.NS, SBIN.NS, SHREECEM.NS, SUNPHARMA.NS, TATAPOWER.NS, ULTRACEMCO.NS, UNITDSPR.NS
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-17 12:51:32
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : INDIA
+Universe Type           : 15D
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_india\top_15\INDIA_15D_20260617_125109.txt

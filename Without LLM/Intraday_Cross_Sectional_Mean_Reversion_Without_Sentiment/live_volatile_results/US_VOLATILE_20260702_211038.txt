@@ -1,0 +1,132 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-02 11:40:38
+End Time                : 2026-07-02 13:10:33
+Duration                : 01:29:55
+Execution Status        : MANUAL_STOP
+Exposure %              : 0.00%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -7.21%          -7.21%
+Cumulative Return                        0.00%          -7.21%          -7.21%
+Best Trade                               0.00%          -7.21%          -7.21%
+Worst Trade                              0.00%          -7.21%          -7.21%
+Total P&L                                $0.00       $-7204.75       $-7204.75
+CAGR (annualized)                        0.00%        -100.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%          -7.21%          -7.21%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%          -7.21%          -7.21%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:03:16        00:03:16
+Avg Time to MFE (min)                      0.0             3.3             3.3
+Avg Time to MAE (min)                      0.0             3.3             3.3
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ALGM
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -7.21%          -7.21%
+Cumulative Return                        0.00%          -7.21%          -7.21%
+Best Trade                               0.00%          -7.21%          -7.21%
+Worst Trade                              0.00%          -7.21%          -7.21%
+Total P&L                                $0.00       $-7204.75       $-7204.75
+CAGR (annualized)                        0.00%        -100.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%          -7.21%          -7.21%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%          -7.21%          -7.21%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:03:16        00:03:16
+Avg Time to MFE (min)                      0.0             3.3             3.3
+Avg Time to MAE (min)                      0.0             3.3             3.3
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ALGM           | 1        | 0      | 1        | 0.0%       | $-7,204.75   | $0.00          | $7204.75       | 00:03:16     | -7.20%       | +100.0%     
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMAT, AMKR, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, ENPH, FORM, GFAI, HAIN, HUT, INTC, IREN, KLAC, LITE, MARA, MRVL, MSTR, MU, MVIS, ON, QCOM, QUBT, RGTI, RIOT, RMBS, RUN, SEDG, SITM, SMCI, SMTC, SPWR, VIAV, VUZI
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-02 11:41:44
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : MANUAL_STOP
+Duration Completed Flag : False
+Manual Stop Flag        : True
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_volatile_results\US_VOLATILE_20260702_211038.txt

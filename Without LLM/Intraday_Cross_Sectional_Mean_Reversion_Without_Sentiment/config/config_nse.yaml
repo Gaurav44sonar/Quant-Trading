@@ -1,0 +1,80 @@
+# ============================================================
+# NSE (India) Intraday Cross-Sectional Mean Reversion — Config
+# ============================================================
+
+market:
+  exchange:        "NSE"
+  timezone:        "Asia/Kolkata"
+  session_start:   "09:15"
+  session_end:     "15:30"
+  bars_per_session: 75          # 5-min bars per session (375 min / 5)
+  bars_per_year:   18900        # 252 days × 75 bars
+  currency:        "INR"
+
+universe:
+  volatile_count:       50
+  non_volatile_count:   50
+  selection_method:     "trailing_atr"
+  volatility_lookback:  60       # days for ATR% ranking
+  atr_window:           20       # ATR period for ranking
+  min_adtv_usd:         500_000  # ~₹40L minimum daily turnover (in USD equiv)
+  min_price:            50.0     # ₹50 minimum
+  max_price:            100_000.0
+  min_history_days:     60
+  rescreen_frequency:   "monthly"
+
+data:
+  source:               "yfinance"
+  frequency:            "5m"
+  ticker_suffix:        ".NS"       # NSE tickers need .NS suffix on yfinance
+  index_ticker:         "^NSEI"     # NIFTY 50 index for beta hedging
+  intraday_max_days:    59          # yfinance limit for intraday
+  rate_limit_sleep:     0.3         # seconds between requests
+  retry_attempts:       3
+  retry_backoff_s:      5
+
+cleaning:
+  max_daily_return:     0.20      # NSE has per-stock circuit breakers (5/10/20%)
+  max_intraday_range:   0.20
+  max_volume_spike_mult: 10.0
+  volume_spike_window:  20
+  max_overnight_gap:    0.20
+  min_volume:           0
+  enforce_ohlc_order:   true
+
+storage:
+  raw_dir:        "data/nse_raw/"
+  clean_dir:      "data/nse_clean/"
+  cache_dir:      "data/nse_cache/"
+  features_dir:   "data/nse_features/"
+  alpha_dir:      "data/nse_alpha/"
+  report_dir:     "reports/"
+  compression:    "snappy"
+
+backtest:
+  capital:            1_000_000    # ₹10L INR
+  txn_cost_bps:       3.0          # ~3 bps (STT + brokerage + GST in India)
+  train_days:         30           # Walk-forward train window
+  test_days:          5            # Walk-forward test window
+  gross_lev:          1.0          # No leverage
+  rebalance_freq:     15           # Every 15 bars (75 min)
+  target_vol:         0.20
+  max_weight:         0.10         # Max 10% per stock (smaller universe)
+  halflife:           100          # EWM halflife in bars
+
+features:
+  atr_window:         30           # 2.5 hours
+  vol_window:         120          # 10 hours
+  volume_window:      60           # 5 hours
+  zscore_window:      120          # 10 hours
+  beta_window:        750          # ~5 trading days
+
+alpha:
+  ic_window:          120          # 10 hours
+  min_ic_tstat:       0.5
+  decay_window:       120
+
+logging:
+  level:     "INFO"
+  file:      "reports/pipeline_nse.log"
+

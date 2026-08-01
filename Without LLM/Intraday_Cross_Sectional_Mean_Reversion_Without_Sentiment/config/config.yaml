@@ -1,0 +1,80 @@
+# ============================================================
+# NASDAQ Intraday Cross-Sectional Mean Reversion — Master Config
+# ============================================================
+
+market:
+  exchange:        "NASDAQ"
+  timezone:        "US/Eastern"
+  session_start:   "09:30"
+  session_end:     "16:00"
+  bars_per_session: 78          # 5-min bars per session (390 min / 5)
+  bars_per_year:   19656        # 252 days × 78 bars
+  currency:        "USD"
+
+universe:
+  volatile_count:       180
+  non_volatile_count:   120
+  selection_method:     "trailing_atr"
+  volatility_lookback:  60       # days for ATR% ranking
+  atr_window:           20       # ATR period for ranking
+  min_adtv_usd:         1_000_000   # $1M minimum daily turnover
+  min_price:            5.0
+  max_price:            50_000.0
+  min_history_days:     60
+  rescreen_frequency:   "monthly"
+
+data:
+  source:               "yfinance"
+  frequency:            "5m"
+  ticker_suffix:        ""          # NASDAQ tickers need no suffix on yfinance
+  index_ticker:         "QQQ"       # NASDAQ-100 ETF for beta hedging
+  intraday_max_days:    59          # yfinance limit for intraday
+  rate_limit_sleep:     0.3         # seconds between requests
+  retry_attempts:       3
+  retry_backoff_s:      5
+
+cleaning:
+  max_daily_return:     0.50      # US has no per-stock circuit limits
+  max_intraday_range:   0.50
+  max_volume_spike_mult: 10.0
+  volume_spike_window:  20
+  max_overnight_gap:    0.50
+  min_volume:           0
+  enforce_ohlc_order:   true
+
+storage:
+  raw_dir:        "data/raw/"
+  clean_dir:      "data/clean/"
+  cache_dir:      "data/cache/"
+  features_dir:   "data/features/"
+  alpha_dir:      "data/alpha/"
+  report_dir:     "reports/"
+  compression:    "snappy"
+
+backtest:
+  capital:            100_000      # $100K USD
+  txn_cost_bps:       0.5          # 0.5 bps (US commissions are very low)
+  train_days:         30           # Walk-forward train window
+  test_days:          5            # Walk-forward test window
+  gross_lev:          1.0          # No leverage
+  rebalance_freq:     15           # Every 15 bars (75 min)
+  target_vol:         0.20
+  max_weight:         0.05         # Max 5% per stock (80 stocks → diversified)
+  halflife:           100          # EWM halflife in bars
+
+features:
+  atr_window:         30           # 2.5 hours (faster for max return)
+  vol_window:         120          # 10 hours
+  volume_window:      60           # 5 hours
+  zscore_window:      120          # 10 hours
+  beta_window:        750          # ~5 trading days
+
+alpha:
+  ic_window:          120          # 10 hours (faster adaptation)
+  min_ic_tstat:       0.5          # Lower threshold → more features active
+  decay_window:       120
+
+logging:
+  level:     "INFO"
+  file:      "reports/pipeline.log"
+

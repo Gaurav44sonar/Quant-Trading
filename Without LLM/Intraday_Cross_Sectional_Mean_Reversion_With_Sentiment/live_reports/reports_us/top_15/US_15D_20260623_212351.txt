@@ -1,0 +1,157 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - 15D
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : 15D
+Total Universe Size     : 304 Stocks
+Start Time              : 2026-06-23 11:53:51
+End Time                : 2026-06-23 14:55:41
+Duration                : 03:01:49
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 76.54%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.39%          -0.39%
+Cumulative Return                        0.00%          -0.39%          -0.39%
+Best Trade                               0.00%           6.38%           6.38%
+Worst Trade                              0.00%          -4.43%          -4.43%
+Total P&L                                $0.00        $-383.18        $-383.18
+CAGR (annualized)                        0.00%         -62.46%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -2.74           -2.74
+Sortino Ratio                             0.00           -4.97           -4.97
+Max Drawdown                             0.00%         -26.71%         -26.71%
+Volatility (Ann.)                        0.00%          35.81%          35.81%
+Win Rate                                 0.00%          42.31%          42.31%
+Win/Loss Ratio                            0.00            0.87            0.87
+Avg Win                                  0.00%           1.61%           1.61%
+Avg Loss                                 0.00%          -1.85%          -1.85%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:21:30        02:21:30
+Avg Time to MFE (min)                      0.0           126.3           126.3
+Avg Time to MAE (min)                      0.0           147.8           147.8
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ACLS, AMKR, ARM, ARQQ, BTDR, CLSK, HUT, IREN, MARA, MSTR, PRCT, QCOM, QUBT, SAIL
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.59%          -0.59%
+Cumulative Return                        0.00%          -0.59%          -0.59%
+Best Trade                               0.00%           6.38%           6.38%
+Worst Trade                              0.00%          -4.43%          -4.43%
+Total P&L                                $0.00        $-313.53        $-313.53
+CAGR (annualized)                        0.00%         -77.41%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -3.35           -3.35
+Sortino Ratio                             0.00           -6.97           -6.97
+Max Drawdown                             0.00%         -19.97%         -19.97%
+Volatility (Ann.)                        0.00%          44.48%          44.48%
+Win Rate                                 0.00%          28.57%          28.57%
+Win/Loss Ratio                            0.00            1.48            1.48
+Avg Win                                  0.00%           2.99%           2.99%
+Avg Loss                                 0.00%          -2.02%          -2.02%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:09:36        02:09:36
+Avg Time to MFE (min)                      0.0            93.2            93.2
+Avg Time to MAE (min)                      0.0           156.6           156.6
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ACAD, CINF, GRFS, JD, KDP, KHC, MAR, MDLZ, MTCH, ORLY, PEP, ROST
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.15%          -0.15%
+Cumulative Return                        0.00%          -0.15%          -0.15%
+Best Trade                               0.00%           1.54%           1.54%
+Worst Trade                              0.00%          -2.59%          -2.59%
+Total P&L                                $0.00         $-69.65         $-69.65
+CAGR (annualized)                        0.00%         -32.04%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -1.81           -1.81
+Sortino Ratio                             0.00           -2.67           -2.67
+Max Drawdown                             0.00%          -7.24%          -7.24%
+Volatility (Ann.)                        0.00%          21.05%          21.05%
+Win Rate                                 0.00%          58.33%          58.33%
+Win/Loss Ratio                            0.00            0.54            0.54
+Avg Win                                  0.00%           0.82%           0.82%
+Avg Loss                                 0.00%          -1.52%          -1.52%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:35:24        02:35:24
+Avg Time to MFE (min)                      0.0           165.0           165.0
+Avg Time to MAE (min)                      0.0           137.4           137.4
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+MSTR           | 1        | 0      | 1        | 0.0%       | $-107.37     | $0.00          | $107.37        | 03:01:21     | -0.11%       | +28.0%      
+ARQQ           | 1        | 1      | 0        | 100.0%     | $+244.43     | $244.43        | $0.00          | 00:01:00     | +0.24%       | -63.8%      
+KHC            | 1        | 1      | 0        | 100.0%     | $+18.81      | $18.81         | $0.00          | 03:01:20     | +0.02%       | -4.9%       
+JD             | 1        | 0      | 1        | 0.0%       | $-98.96      | $0.00          | $98.96         | 03:01:20     | -0.10%       | +25.8%      
+MAR            | 1        | 1      | 0        | 100.0%     | $+12.28      | $12.28         | $0.00          | 03:01:20     | +0.01%       | -3.2%       
+MARA           | 1        | 0      | 1        | 0.0%       | $-32.25      | $0.00          | $32.25         | 03:01:19     | -0.03%       | +8.4%       
+ROST           | 1        | 0      | 1        | 0.0%       | $-61.12      | $0.00          | $61.12         | 03:01:19     | -0.06%       | +16.0%      
+GRFS           | 1        | 0      | 1        | 0.0%       | $-88.91      | $0.00          | $88.91         | 03:01:19     | -0.09%       | +23.2%      
+PRCT           | 1        | 0      | 1        | 0.0%       | $-118.41     | $0.00          | $118.41        | 03:01:18     | -0.12%       | +30.9%      
+QCOM           | 1        | 0      | 1        | 0.0%       | $-14.04      | $0.00          | $14.04         | 03:01:18     | -0.01%       | +3.7%       
+QUBT           | 1        | 0      | 1        | 0.0%       | $-170.38     | $0.00          | $170.38        | 03:01:18     | -0.17%       | +44.5%      
+ACLS           | 1        | 0      | 1        | 0.0%       | $-34.10      | $0.00          | $34.10         | 03:01:17     | -0.03%       | +8.9%       
+ARM            | 1        | 0      | 1        | 0.0%       | $-120.27     | $0.00          | $120.27        | 03:01:17     | -0.12%       | +31.4%      
+BTDR           | 1        | 1      | 0        | 100.0%     | $+127.37     | $127.37        | $0.00          | 00:55:56     | +0.13%       | -33.2%      
+HUT            | 1        | 1      | 0        | 100.0%     | $+9.90       | $9.90          | $0.00          | 03:01:16     | +0.01%       | -2.6%       
+IREN           | 1        | 0      | 1        | 0.0%       | $-82.80      | $0.00          | $82.80         | 03:01:16     | -0.08%       | +21.6%      
+CLSK           | 1        | 0      | 1        | 0.0%       | $-88.13      | $0.00          | $88.13         | 03:01:15     | -0.09%       | +23.0%      
+PEP            | 1        | 0      | 1        | 0.0%       | $-5.54       | $0.00          | $5.54          | 03:01:15     | -0.01%       | +1.4%       
+SAIL           | 1        | 0      | 1        | 0.0%       | $-3.00       | $0.00          | $3.00          | 03:01:15     | -0.00%       | +0.8%       
+MTCH           | 1        | 0      | 1        | 0.0%       | $-34.56      | $0.00          | $34.56         | 03:01:15     | -0.03%       | +9.0%       
+KDP            | 1        | 1      | 0        | 100.0%     | $+58.98      | $58.98         | $0.00          | 03:01:14     | +0.06%       | -15.4%      
+ACAD           | 1        | 1      | 0        | 100.0%     | $+41.83      | $41.83         | $0.00          | 03:01:14     | +0.04%       | -10.9%      
+MDLZ           | 1        | 1      | 0        | 100.0%     | $+20.48      | $20.48         | $0.00          | 03:01:13     | +0.02%       | -5.3%       
+ORLY           | 1        | 1      | 0        | 100.0%     | $+28.23      | $28.23         | $0.00          | 03:01:13     | +0.03%       | -7.4%       
+CINF           | 1        | 1      | 0        | 100.0%     | $+38.82      | $38.82         | $0.00          | 03:01:13     | +0.04%       | -10.1%      
+AMKR           | 1        | 1      | 0        | 100.0%     | $+75.52      | $75.52         | $0.00          | 03:01:12     | +0.08%       | -19.7%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : 15D
+Volatile Stocks List    : ACLS, AMKR, ANGI, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, ENPH, FORM, GFAI, HAIN, HUT, IREN, LEGN, LITE, MARA, MRVL, MSTR, MU, MVIS, OPEN, PLUG, PRCT, QCOM, QUBT, RGTI, RMBS, RXRX, SAIL, SEDG, SMCI, SMTC, SPWR, VIAV, VUZI, WKHS
+Non-Volatile Stocks List: AAPL, ACAD, AMGN, APLS, BMRN, BNTX, CINF, COST, CPRX, DAWN, EA, EBAY, EQIX, FOLD, GILD, GRFS, HSIC, IONS, ISRG, JD, KDP, KHC, LAMR, MAR, MAXN, MDLZ, MNST, MTCH, NTES, ORLY, PEP, REGN, ROST, SBUX, SLAB, UDMY, UTHR, VRTX, WB, WBD
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-23 11:54:18
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : 15D
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_us\top_15\US_15D_20260623_212351.txt

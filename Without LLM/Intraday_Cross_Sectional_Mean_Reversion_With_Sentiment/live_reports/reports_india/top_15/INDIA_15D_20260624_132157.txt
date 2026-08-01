@@ -1,0 +1,155 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: INDIA - 15D
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : INDIA
+Universe Type           : 15D
+Total Universe Size     : 158 Stocks
+Start Time              : 2026-06-24 13:21:57
+End Time                : 2026-06-24 14:55:38
+Duration                : 01:33:41
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 66.61%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.34%           0.34%
+Cumulative Return                        0.00%           0.34%           0.34%
+Best Trade                               0.00%           1.84%           1.84%
+Worst Trade                              0.00%          -1.50%          -1.50%
+Total P&L                                ₹0.00         ₹306.86         ₹306.86
+CAGR (annualized)                        0.00%         134.74%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            5.56            5.56
+Sortino Ratio                             0.00           12.89           12.89
+Max Drawdown                             0.00%          -1.50%          -1.50%
+Volatility (Ann.)                        0.00%          15.37%          15.37%
+Win Rate                                 0.00%          70.83%          70.83%
+Win/Loss Ratio                            0.00            0.89            0.89
+Avg Win                                  0.00%           0.89%           0.89%
+Avg Loss                                 0.00%          -1.00%          -1.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:08:19        01:08:19
+Avg Time to MFE (min)                      0.0            87.4            87.4
+Avg Time to MAE (min)                      0.0            52.2            52.2
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ASHOKLEY.NS, GRSE.NS, HINDALCO.NS, IDEA.NS, INFY.NS, KAYNES.NS, MANAPPURAM.NS, MUTHOOTFIN.NS, NATIONALUM.NS, PRESTIGE.NS, SAIL.NS, UCOBANK.NS, VEDL.NS, VOLTAS.NS, WIPRO.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.41%           0.41%
+Cumulative Return                        0.00%           0.43%           0.43%
+Best Trade                               0.00%           1.84%           1.84%
+Worst Trade                              0.00%          -1.36%          -1.36%
+Total P&L                                ₹0.00         ₹241.61         ₹241.61
+CAGR (annualized)                        0.00%         191.80%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            6.62            6.62
+Sortino Ratio                             0.00           17.95           17.95
+Max Drawdown                             0.00%          -1.36%          -1.36%
+Volatility (Ann.)                        0.00%          15.68%          15.68%
+Win Rate                                 0.00%          66.67%          66.67%
+Win/Loss Ratio                            0.00            1.25            1.25
+Avg Win                                  0.00%           1.03%           1.03%
+Avg Loss                                 0.00%          -0.82%          -0.82%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:08:36        01:08:36
+Avg Time to MFE (min)                      0.0            83.8            83.8
+Avg Time to MAE (min)                      0.0            57.8            57.8
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ADANIPORTS.NS, BEL.NS, CIPLA.NS, DABUR.NS, HDFCLIFE.NS, RELIANCE.NS, SBILIFE.NS, SBIN.NS, TATASTEEL.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.22%           0.22%
+Cumulative Return                        0.00%           0.19%           0.19%
+Best Trade                               0.00%           1.14%           1.14%
+Worst Trade                              0.00%          -1.50%          -1.50%
+Total P&L                                ₹0.00          ₹65.25          ₹65.25
+CAGR (annualized)                        0.00%          62.73%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            3.74            3.74
+Sortino Ratio                             0.00           63.94           63.94
+Max Drawdown                             0.00%          -2.89%          -2.89%
+Volatility (Ann.)                        0.00%          14.63%          14.63%
+Win Rate                                 0.00%          77.78%          77.78%
+Win/Loss Ratio                            0.00            0.48            0.48
+Avg Win                                  0.00%           0.69%           0.69%
+Avg Loss                                 0.00%          -1.44%          -1.44%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:07:51        01:07:51
+Avg Time to MFE (min)                      0.0            93.2            93.2
+Avg Time to MAE (min)                      0.0            43.0            43.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+VEDL.NS        | 1        | 0      | 1        | 0.0%       | ₹-32.90      | ₹0.00          | ₹32.90         | 01:33:12     | -0.03%       | -10.7%      
+WIPRO.NS       | 1        | 1      | 0        | 100.0%     | ₹+33.22      | ₹33.22         | ₹0.00          | 01:33:12     | +0.03%       | +10.8%      
+NATIONALUM.NS  | 1        | 0      | 1        | 0.0%       | ₹-39.60      | ₹0.00          | ₹39.60         | 01:33:12     | -0.04%       | -12.9%      
+ADANIPORTS.NS  | 1        | 1      | 0        | 100.0%     | ₹+40.87      | ₹40.87         | ₹0.00          | 01:33:12     | +0.04%       | +13.3%      
+BEL.NS         | 1        | 0      | 1        | 0.0%       | ₹-52.65      | ₹0.00          | ₹52.65         | 01:33:12     | -0.05%       | -17.2%      
+SAIL.NS        | 1        | 1      | 0        | 100.0%     | ₹+73.84      | ₹73.84         | ₹0.00          | 00:32:54     | +0.07%       | +24.1%      
+PRESTIGE.NS    | 1        | 1      | 0        | 100.0%     | ₹+31.40      | ₹31.40         | ₹0.00          | 01:33:12     | +0.03%       | +10.2%      
+INFY.NS        | 1        | 1      | 0        | 100.0%     | ₹+52.40      | ₹52.40         | ₹0.00          | 01:33:12     | +0.05%       | +17.1%      
+TATASTEEL.NS   | 1        | 0      | 1        | 0.0%       | ₹-60.69      | ₹0.00          | ₹60.69         | 01:33:12     | -0.06%       | -19.8%      
+MUTHOOTFIN.NS  | 1        | 1      | 0        | 100.0%     | ₹+50.70      | ₹50.70         | ₹0.00          | 01:33:12     | +0.05%       | +16.5%      
+SBILIFE.NS     | 1        | 1      | 0        | 100.0%     | ₹+6.80       | ₹6.80          | ₹0.00          | 01:33:12     | +0.01%       | +2.2%       
+VOLTAS.NS      | 1        | 0      | 1        | 0.0%       | ₹-24.90      | ₹0.00          | ₹24.90         | 01:33:12     | -0.02%       | -8.1%       
+MANAPPURAM.NS  | 1        | 1      | 0        | 100.0%     | ₹+16.50      | ₹16.50         | ₹0.00          | 01:33:12     | +0.02%       | +5.4%       
+DABUR.NS       | 1        | 1      | 0        | 100.0%     | ₹+23.61      | ₹23.61         | ₹0.00          | 01:33:12     | +0.02%       | +7.7%       
+IDEA.NS        | 1        | 0      | 1        | 0.0%       | ₹-11.52      | ₹0.00          | ₹11.52         | 01:33:12     | -0.01%       | -3.8%       
+HDFCLIFE.NS    | 1        | 1      | 0        | 100.0%     | ₹+19.95      | ₹19.95         | ₹0.00          | 01:33:12     | +0.02%       | +6.5%       
+UCOBANK.NS     | 1        | 1      | 0        | 100.0%     | ₹+44.45      | ₹44.45         | ₹0.00          | 01:33:12     | +0.04%       | +14.5%      
+KAYNES.NS      | 1        | 1      | 0        | 100.0%     | ₹+19.50      | ₹19.50         | ₹0.00          | 01:33:12     | +0.02%       | +6.4%       
+CIPLA.NS       | 1        | 1      | 0        | 100.0%     | ₹+22.02      | ₹22.02         | ₹0.00          | 01:33:12     | +0.02%       | +7.2%       
+RELIANCE.NS    | 1        | 1      | 0        | 100.0%     | ₹+33.11      | ₹33.11         | ₹0.00          | 01:33:12     | +0.03%       | +10.8%      
+GRSE.NS        | 1        | 0      | 1        | 0.0%       | ₹-38.30      | ₹0.00          | ₹38.30         | 01:33:12     | -0.04%       | -12.5%      
+HINDALCO.NS    | 1        | 1      | 0        | 100.0%     | ₹+8.40       | ₹8.40          | ₹0.00          | 01:33:12     | +0.01%       | +2.7%       
+SBIN.NS        | 1        | 1      | 0        | 100.0%     | ₹+32.22      | ₹32.22         | ₹0.00          | 01:33:12     | +0.03%       | +10.5%      
+ASHOKLEY.NS    | 1        | 1      | 0        | 100.0%     | ₹+58.41      | ₹58.41         | ₹0.00          | 01:33:12     | +0.06%       | +19.0%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : 15D
+Volatile Stocks List    : AARTIIND.NS, ADANIGREEN.NS, ADANIPOWER.NS, ASHOKLEY.NS, BALKRISIND.NS, BALRAMCHIN.NS, BANDHANBNK.NS, BHEL.NS, CLEAN.NS, COCHINSHIP.NS, COFORGE.NS, DEEPAKNTR.NS, DIXON.NS, GRANULES.NS, GRSE.NS, HINDALCO.NS, IDEA.NS, INFY.NS, JPPOWER.NS, KAYNES.NS, LALPATHLAB.NS, LTTS.NS, MAHABANK.NS, MANAPPURAM.NS, MUTHOOTFIN.NS, NATIONALUM.NS, PAYTM.NS, PERSISTENT.NS, PHOENIXLTD.NS, PRESTIGE.NS, RENUKA.NS, SAIL.NS, TECHM.NS, TRENT.NS, TRIVENI.NS, UCOBANK.NS, VEDL.NS, VOLTAS.NS, WIPRO.NS, ZEEL.NS
+Non-Volatile Stocks List: ACC.NS, ADANIPORTS.NS, ALKEM.NS, APOLLOHOSP.NS, ATUL.NS, AXISBANK.NS, BAJAJ-AUTO.NS, BEL.NS, BHARTIARTL.NS, BRITANNIA.NS, CIPLA.NS, DABUR.NS, DIVISLAB.NS, DRREDDY.NS, EICHERMOT.NS, FEDERALBNK.NS, GRASIM.NS, HDFCLIFE.NS, HEROMOTOCO.NS, HINDUNILVR.NS, ICICIBANK.NS, INDHOTEL.NS, IRCTC.NS, ITC.NS, KOTAKBANK.NS, LT.NS, LUPIN.NS, MARICO.NS, MARUTI.NS, NTPC.NS, PIDILITIND.NS, POWERGRID.NS, RELIANCE.NS, SBILIFE.NS, SBIN.NS, SUNPHARMA.NS, TATAPOWER.NS, TATASTEEL.NS, ULTRACEMCO.NS, UNITDSPR.NS
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-24 13:22:24
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : INDIA
+Universe Type           : 15D
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.; Failed to fetch live bars during monitoring: No bar data returned from Yahoo Finance.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_india\top_15\INDIA_15D_20260624_132157.txt

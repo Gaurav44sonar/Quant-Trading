@@ -1,0 +1,155 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: INDIA - ALLTIME
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : INDIA
+Universe Type           : ALLTIME
+Total Universe Size     : 158 Stocks
+Start Time              : 2026-06-23 13:07:15
+End Time                : 2026-06-23 15:10:35
+Duration                : 02:03:19
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 78.73%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -1.14%          -1.14%
+Cumulative Return                        0.00%          -1.18%          -1.18%
+Best Trade                               0.00%           1.04%           1.04%
+Worst Trade                              0.00%          -2.57%          -2.57%
+Total P&L                                ₹0.00       ₹-1054.80       ₹-1054.80
+CAGR (annualized)                        0.00%         -95.01%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          -17.16          -17.16
+Sortino Ratio                             0.00          -22.05          -22.05
+Max Drawdown                             0.00%         -27.44%         -27.44%
+Volatility (Ann.)                        0.00%          16.80%          16.80%
+Win Rate                                 0.00%          12.50%          12.50%
+Win/Loss Ratio                            0.00            0.53            0.53
+Avg Win                                  0.00%           0.75%           0.75%
+Avg Loss                                 0.00%          -1.41%          -1.41%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:50:17        01:50:17
+Avg Time to MFE (min)                      0.0           116.0           116.0
+Avg Time to MAE (min)                      0.0            98.9            98.9
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : BANDHANBNK.NS, CLEAN.NS, COCHINSHIP.NS, INFY.NS, JPPOWER.NS, NATIONALUM.NS, NMDC.NS, PAYTM.NS, RVNL.NS, SAIL.NS, TCS.NS, TRENT.NS, VEDL.NS, VOLTAS.NS, WIPRO.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -1.36%          -1.36%
+Cumulative Return                        0.00%          -1.42%          -1.42%
+Best Trade                               0.00%           0.91%           0.91%
+Worst Trade                              0.00%          -2.45%          -2.45%
+Total P&L                                ₹0.00        ₹-797.49        ₹-797.49
+CAGR (annualized)                        0.00%         -97.25%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          -21.06          -21.06
+Sortino Ratio                             0.00          -30.21          -30.21
+Max Drawdown                             0.00%         -20.45%         -20.45%
+Volatility (Ann.)                        0.00%          16.31%          16.31%
+Win Rate                                 0.00%          13.33%          13.33%
+Win/Loss Ratio                            0.00            0.37            0.37
+Avg Win                                  0.00%           0.61%           0.61%
+Avg Loss                                 0.00%          -1.67%          -1.67%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:48:14        01:48:14
+Avg Time to MFE (min)                      0.0           122.7           122.7
+Avg Time to MAE (min)                      0.0            92.6            92.6
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : DABUR.NS, HINDUNILVR.NS, IRCTC.NS, ITC.NS, JIOFIN.NS, JSWSTEEL.NS, MARICO.NS, PIDILITIND.NS, RELIANCE.NS
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.78%          -0.78%
+Cumulative Return                        0.00%          -0.78%          -0.78%
+Best Trade                               0.00%           1.04%           1.04%
+Worst Trade                              0.00%          -2.57%          -2.57%
+Total P&L                                ₹0.00        ₹-257.31        ₹-257.31
+CAGR (annualized)                        0.00%         -86.23%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00          -12.27          -12.27
+Sortino Ratio                             0.00          -15.03          -15.03
+Max Drawdown                             0.00%          -8.03%          -8.03%
+Volatility (Ann.)                        0.00%          15.96%          15.96%
+Win Rate                                 0.00%          11.11%          11.11%
+Win/Loss Ratio                            0.00            1.04            1.04
+Avg Win                                  0.00%           1.04%           1.04%
+Avg Loss                                 0.00%          -1.00%          -1.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:53:42        01:53:42
+Avg Time to MFE (min)                      0.0           104.8           104.8
+Avg Time to MAE (min)                      0.0           109.3           109.3
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+VOLTAS.NS      | 1        | 0      | 1        | 0.0%       | ₹-46.50      | ₹0.00          | ₹46.50         | 02:02:39     | -0.05%       | +4.4%       
+VEDL.NS        | 1        | 0      | 1        | 0.0%       | ₹-89.17      | ₹0.00          | ₹89.17         | 02:02:39     | -0.09%       | +8.5%       
+SAIL.NS        | 1        | 0      | 1        | 0.0%       | ₹-97.82      | ₹0.00          | ₹97.82         | 02:02:39     | -0.10%       | +9.3%       
+INFY.NS        | 1        | 0      | 1        | 0.0%       | ₹-40.00      | ₹0.00          | ₹40.00         | 02:02:39     | -0.04%       | +3.8%       
+TCS.NS         | 1        | 0      | 1        | 0.0%       | ₹-28.90      | ₹0.00          | ₹28.90         | 02:02:39     | -0.03%       | +2.7%       
+JPPOWER.NS     | 1        | 0      | 1        | 0.0%       | ₹-6.90       | ₹0.00          | ₹6.90          | 02:02:39     | -0.01%       | +0.7%       
+MARICO.NS      | 1        | 1      | 0        | 100.0%     | ₹+42.13      | ₹42.13         | ₹0.00          | 02:02:39     | +0.04%       | -4.0%       
+TRENT.NS       | 1        | 0      | 1        | 0.0%       | ₹-72.40      | ₹0.00          | ₹72.40         | 02:02:39     | -0.07%       | +6.9%       
+JSWSTEEL.NS    | 1        | 0      | 1        | 0.0%       | ₹-98.47      | ₹0.00          | ₹98.47         | 02:02:39     | -0.10%       | +9.3%       
+NATIONALUM.NS  | 1        | 0      | 1        | 0.0%       | ₹-97.18      | ₹0.00          | ₹97.18         | 02:02:39     | -0.10%       | +9.2%       
+COCHINSHIP.NS  | 1        | 1      | 0        | 100.0%     | ₹+26.80      | ₹26.80         | ₹0.00          | 02:02:39     | +0.03%       | -2.5%       
+RVNL.NS        | 1        | 0      | 1        | 0.0%       | ₹-70.04      | ₹0.00          | ₹70.04         | 02:02:39     | -0.07%       | +6.6%       
+NMDC.NS        | 1        | 0      | 1        | 0.0%       | ₹-97.66      | ₹0.00          | ₹97.66         | 02:02:39     | -0.10%       | +9.3%       
+ITC.NS         | 1        | 0      | 1        | 0.0%       | ₹-8.40       | ₹0.00          | ₹8.40          | 02:02:39     | -0.01%       | +0.8%       
+PAYTM.NS       | 1        | 1      | 0        | 100.0%     | ₹+10.20      | ₹10.20         | ₹0.00          | 02:02:39     | +0.01%       | -1.0%       
+RELIANCE.NS    | 1        | 0      | 1        | 0.0%       | ₹-33.30      | ₹0.00          | ₹33.30         | 02:02:39     | -0.03%       | +3.2%       
+HINDUNILVR.NS  | 1        | 0      | 1        | 0.0%       | ₹-15.40      | ₹0.00          | ₹15.40         | 02:02:39     | -0.02%       | +1.5%       
+JIOFIN.NS      | 1        | 0      | 1        | 0.0%       | ₹-90.78      | ₹0.00          | ₹90.78         | 02:02:39     | -0.09%       | +8.6%       
+DABUR.NS       | 1        | 0      | 1        | 0.0%       | ₹-18.45      | ₹0.00          | ₹18.45         | 02:02:39     | -0.02%       | +1.7%       
+WIPRO.NS       | 1        | 0      | 1        | 0.0%       | ₹-90.62      | ₹0.00          | ₹90.62         | 02:02:39     | -0.09%       | +8.6%       
+IRCTC.NS       | 1        | 0      | 1        | 0.0%       | ₹-16.45      | ₹0.00          | ₹16.45         | 02:02:39     | -0.02%       | +1.6%       
+PIDILITIND.NS  | 1        | 0      | 1        | 0.0%       | ₹-18.20      | ₹0.00          | ₹18.20         | 02:02:39     | -0.02%       | +1.7%       
+BANDHANBNK.NS  | 1        | 0      | 1        | 0.0%       | ₹-27.55      | ₹0.00          | ₹27.55         | 02:02:39     | -0.03%       | +2.6%       
+CLEAN.NS       | 1        | 0      | 1        | 0.0%       | ₹-69.75      | ₹0.00          | ₹69.75         | 02:02:39     | -0.07%       | +6.6%       
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : ALLTIME
+Volatile Stocks List    : AARTIIND.NS, ADANIGREEN.NS, ADANIPOWER.NS, ASHOKLEY.NS, BALKRISIND.NS, BALRAMCHIN.NS, BANDHANBNK.NS, BHEL.NS, CLEAN.NS, COCHINSHIP.NS, COFORGE.NS, GRANULES.NS, HINDALCO.NS, HINDCOPPER.NS, IDEA.NS, INFY.NS, JPPOWER.NS, KAYNES.NS, LALPATHLAB.NS, LTTS.NS, MANAPPURAM.NS, MPHASIS.NS, MUTHOOTFIN.NS, NATIONALUM.NS, NMDC.NS, PAYTM.NS, PERSISTENT.NS, PRESTIGE.NS, RENUKA.NS, RVNL.NS, SAIL.NS, SUZLON.NS, TCS.NS, TECHM.NS, TRENT.NS, TRIVENI.NS, VEDL.NS, VOLTAS.NS, WIPRO.NS, ZEEL.NS
+Non-Volatile Stocks List: ACC.NS, ADANIPORTS.NS, APOLLOHOSP.NS, AXISBANK.NS, BAJAJ-AUTO.NS, BEL.NS, BHARTIARTL.NS, BRITANNIA.NS, CIPLA.NS, DABUR.NS, DIVISLAB.NS, DRREDDY.NS, EICHERMOT.NS, FEDERALBNK.NS, GRASIM.NS, HDFCBANK.NS, HDFCLIFE.NS, HEROMOTOCO.NS, HINDUNILVR.NS, ICICIBANK.NS, IRCTC.NS, IRFC.NS, ITC.NS, JIOFIN.NS, JSWSTEEL.NS, KOTAKBANK.NS, LT.NS, LUPIN.NS, MARICO.NS, MARUTI.NS, PIDILITIND.NS, POWERGRID.NS, RELIANCE.NS, SBILIFE.NS, SBIN.NS, SHREECEM.NS, SUNPHARMA.NS, TATAPOWER.NS, ULTRACEMCO.NS, UNITDSPR.NS
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-23 13:07:54
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : INDIA
+Universe Type           : ALLTIME
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_india\alltime\INDIA_ALLTIME_20260623_130715.txt
