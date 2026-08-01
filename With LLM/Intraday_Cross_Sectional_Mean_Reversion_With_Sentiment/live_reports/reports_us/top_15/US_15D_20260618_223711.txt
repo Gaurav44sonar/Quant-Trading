@@ -1,0 +1,130 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - 15D
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : 15D
+Total Universe Size     : 304 Stocks
+Total Trades            : 26
+Winning Trades          : 12
+Losing Trades           : 14
+Win Rate                : 46.15%
+Profit Factor           : 1.06
+Net PnL                 : $+41.03
+Net Return (%)          : +0.04%
+Gross Profit            : $681.50
+Gross Profit (%)        : 0.72%
+Gross Loss              : $640.46
+Gross Loss (%)          : 0.67%
+Sharpe Ratio            : 0.34
+Sortino Ratio           : 0.69
+Maximum Drawdown        : 0.29%
+Volatility              : 1.83%
+Average Holding Time    : 02:07:21
+Average Trade Duration  : 02:20:14
+Exposure %              : 79.24%
+Start Time              : 2026-06-18 13:07:11
+End Time                : 2026-06-18 15:40:45
+Duration                : 02:33:34
+Execution Status        : DURATION_COMPLETED
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : FIVN, GRPN, LEGN, MSTR, PRCT, SAIL, SEDG, WIX
+Total Trades            : 8
+Winning Trades          : 5
+Losing Trades           : 3
+Win Rate                : 62.50%
+Net PnL                 : $+291.38
+Net Return (%)          : +0.99%
+Gross Profit            : $537.78
+Gross Profit (%)        : 1.83%
+Gross Loss              : $246.40
+Gross Loss (%)          : 0.84%
+Profit Factor           : 2.18
+Sharpe Ratio            : 5.61
+Sortino Ratio           : 13.57
+Maximum Drawdown        : 0.00%
+Volatility              : 2.78%
+Average Holding Time    : 01:17:56
+Average Trade Duration  : 01:52:25
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AMGN, CINF, CMCSA, EA, HSIC, IDXX, KDP, KHC, MDLZ, MNST, MTCH, NFLX, NWSA, ORLY, PEP, TMUS, WB, WBD
+Total Trades            : 18
+Winning Trades          : 7
+Losing Trades           : 11
+Win Rate                : 38.89%
+Net PnL                 : $-250.35
+Net Return (%)          : -0.38%
+Gross Profit            : $143.71
+Gross Profit (%)        : 0.22%
+Gross Loss              : $394.06
+Gross Loss (%)          : 0.60%
+Profit Factor           : 0.36
+Sharpe Ratio            : -6.55
+Sortino Ratio           : -10.06
+Maximum Drawdown        : 0.00%
+Volatility              : 0.92%
+Average Holding Time    : 02:29:19
+Average Trade Duration  : 02:32:35
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+CMCSA          | 1        | 0      | 1        | 0.0%       | $-24.45      | $0.00          | $24.45         | 02:32:39     | -0.02%       | -59.6%      
+NFLX           | 1        | 1      | 0        | 100.0%     | $+41.46      | $41.46         | $0.00          | 02:32:39     | +0.04%       | +101.0%     
+KDP            | 1        | 0      | 1        | 0.0%       | $-22.61      | $0.00          | $22.61         | 02:32:39     | -0.02%       | -55.1%      
+PEP            | 1        | 0      | 1        | 0.0%       | $-22.36      | $0.00          | $22.36         | 02:32:38     | -0.02%       | -54.5%      
+MSTR           | 1        | 0      | 1        | 0.0%       | $-89.20      | $0.00          | $89.20         | 02:32:38     | -0.09%       | -217.4%     
+ORLY           | 1        | 0      | 1        | 0.0%       | $-87.12      | $0.00          | $87.12         | 02:32:38     | -0.09%       | -212.3%     
+IDXX           | 1        | 1      | 0        | 100.0%     | $+31.02      | $31.02         | $0.00          | 02:32:37     | +0.03%       | +75.6%      
+SAIL           | 1        | 1      | 0        | 100.0%     | $+56.31      | $56.31         | $0.00          | 02:32:37     | +0.06%       | +137.2%     
+MDLZ           | 1        | 0      | 1        | 0.0%       | $-34.80      | $0.00          | $34.80         | 02:32:37     | -0.03%       | -84.8%      
+PRCT           | 1        | 1      | 0        | 100.0%     | $+89.02      | $89.02         | $0.00          | 02:32:36     | +0.09%       | +216.9%     
+EA             | 1        | 1      | 0        | 100.0%     | $+1.98       | $1.98          | $0.00          | 02:32:36     | +0.00%       | +4.8%       
+MTCH           | 1        | 1      | 0        | 100.0%     | $+11.43      | $11.43         | $0.00          | 02:32:35     | +0.01%       | +27.9%      
+AMGN           | 1        | 0      | 1        | 0.0%       | $-58.10      | $0.00          | $58.10         | 02:32:35     | -0.06%       | -141.6%     
+NWSA           | 1        | 0      | 1        | 0.0%       | $-55.06      | $0.00          | $55.06         | 02:32:34     | -0.06%       | -134.2%     
+SEDG           | 1        | 1      | 0        | 100.0%     | $+195.38     | $195.38        | $0.00          | 00:17:09     | +0.20%       | +476.1%     
+TMUS           | 1        | 1      | 0        | 100.0%     | $+12.80      | $12.80         | $0.00          | 02:32:34     | +0.01%       | +31.2%      
+HSIC           | 1        | 1      | 0        | 100.0%     | $+15.41      | $15.41         | $0.00          | 02:32:33     | +0.02%       | +37.6%      
+KHC            | 1        | 0      | 1        | 0.0%       | $-31.20      | $0.00          | $31.20         | 02:32:33     | -0.03%       | -76.0%      
+GRPN           | 1        | 0      | 1        | 0.0%       | $-27.24      | $0.00          | $27.24         | 02:32:33     | -0.03%       | -66.4%      
+LEGN           | 1        | 0      | 1        | 0.0%       | $-129.96     | $0.00          | $129.96        | 02:32:33     | -0.13%       | -316.7%     
+WB             | 1        | 0      | 1        | 0.0%       | $-7.54       | $0.00          | $7.54          | 02:32:32     | -0.01%       | -18.4%      
+FIVN           | 1        | 1      | 0        | 100.0%     | $+105.40     | $105.40        | $0.00          | 01:07:07     | +0.11%       | +256.8%     
+WIX            | 1        | 1      | 0        | 100.0%     | $+91.67      | $91.67         | $0.00          | 00:52:06     | +0.09%       | +223.4%     
+CINF           | 1        | 0      | 1        | 0.0%       | $-19.21      | $0.00          | $19.21         | 02:32:31     | -0.02%       | -46.8%      
+WBD            | 1        | 1      | 0        | 100.0%     | $+29.61      | $29.61         | $0.00          | 02:32:31     | +0.03%       | +72.2%      
+MNST           | 1        | 0      | 1        | 0.0%       | $-31.60      | $0.00          | $31.60         | 02:32:30     | -0.03%       | -77.0%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : 15D
+Volatile Stocks List    : AMBA, ANGI, APPN, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, ENPH, EVGO, FIVN, GFAI, GRPN, HAIN, HUT, IOVA, LEGN, LITE, MDB, MRVL, MSTR, MVIS, OPEN, PLUG, PRCT, QUBT, RGTI, RMBS, RXRX, SAIL, SEDG, SMCI, SMTC, SPWR, VIAV, VUZI, WIX, WKHS
+Non-Volatile Stocks List: AAPL, ABNB, ACAD, AMGN, CINF, CMCSA, COST, CPRX, EA, EBAY, EQIX, EXEL, GRFS, HSIC, IDXX, IONS, ISRG, JD, KDP, KHC, LAMR, MAR, MDLZ, MNST, MTCH, NFLX, NTES, NWSA, ORLY, PEP, REGN, ROST, SBUX, SLAB, TCOM, TMUS, UTHR, VRTX, WB, WBD
+Ranking Method Used     : trailing_atr
+Selection Timestamp     : 2026-06-18 13:08:05
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : 15D
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_reports\reports_us\top_15\US_15D_20260618_223711.txt

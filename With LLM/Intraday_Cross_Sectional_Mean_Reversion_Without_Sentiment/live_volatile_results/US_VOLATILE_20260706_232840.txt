@@ -1,0 +1,164 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-06 13:58:40
+End Time                : 2026-07-06 15:30:30
+Duration                : 01:31:49
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 76.04%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.17%          -0.17%
+Cumulative Return                        0.00%          -0.17%          -0.17%
+Best Trade                               0.00%           0.57%           0.57%
+Worst Trade                              0.00%          -1.52%          -1.52%
+Total P&L                                $0.00        $-173.64        $-173.64
+CAGR (annualized)                        0.00%         -35.61%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -3.83           -3.83
+Sortino Ratio                             0.00           -3.96           -3.96
+Max Drawdown                             0.00%          -1.52%          -1.52%
+Volatility (Ann.)                        0.00%          11.31%          11.31%
+Win Rate                                 0.00%          60.00%          60.00%
+Win/Loss Ratio                            0.00            0.32            0.32
+Avg Win                                  0.00%           0.27%           0.27%
+Avg Loss                                 0.00%          -0.83%          -0.83%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:08:46        01:08:46
+Avg Time to MFE (min)                      0.0            74.2            74.2
+Avg Time to MAE (min)                      0.0            63.2            63.2
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : ARQQ, FORM, KLAC, LRCX, VIAV
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.17%          -0.17%
+Cumulative Return                        0.00%          -0.17%          -0.17%
+Best Trade                               0.00%           0.57%           0.57%
+Worst Trade                              0.00%          -1.52%          -1.52%
+Total P&L                                $0.00        $-173.64        $-173.64
+CAGR (annualized)                        0.00%         -35.61%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -3.83           -3.83
+Sortino Ratio                             0.00           -3.96           -3.96
+Max Drawdown                             0.00%          -1.52%          -1.52%
+Volatility (Ann.)                        0.00%          11.31%          11.31%
+Win Rate                                 0.00%          60.00%          60.00%
+Win/Loss Ratio                            0.00            0.32            0.32
+Avg Win                                  0.00%           0.27%           0.27%
+Avg Loss                                 0.00%          -0.83%          -0.83%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:08:46        01:08:46
+Avg Time to MFE (min)                      0.0            74.2            74.2
+Avg Time to MAE (min)                      0.0            63.2            63.2
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+KLAC           | 1        | 1      | 0        | 100.0%     | $+112.12     | $112.12        | $0.00          | 01:31:19     | +0.11%       | -64.6%      
+FORM           | 1        | 0      | 1        | 0.0%       | $-303.35     | $0.00          | $303.35        | 00:56:09     | -0.30%       | +174.7%     
+LRCX           | 1        | 1      | 0        | 100.0%     | $+40.60      | $40.60         | $0.00          | 01:31:18     | +0.04%       | -23.4%      
+ARQQ           | 1        | 0      | 1        | 0.0%       | $-27.70      | $0.00          | $27.70         | 01:31:18     | -0.03%       | +15.9%      
+VIAV           | 1        | 1      | 0        | 100.0%     | $+4.68       | $4.68          | $0.00          | 01:31:18     | +0.00%       | -2.7%       
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMKR, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, DIOD, ENPH, FORM, HAIN, HUT, INTC, IREN, KLAC, LITE, LRCX, MARA, MRVL, MSTR, MU, MVIS, ON, QUBT, RGTI, RIOT, RMBS, RUN, SEDG, SITM, SMCI, SMTC, SPWR, VIAV, VUZI, WKHS
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-06 13:59:00
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_volatile_results\US_VOLATILE_20260706_232840.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.25
+Average Sentiment Score : +0.22
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 113
+Duplicate Articles Duped: 24
+Confirmed Trades        : 5
+Rejected Trades (Negative): 0
+Held Trades (Low Conf)  : 0
+
+Sector Sentiments:
+  - Semiconductor  : +0.50
+  - Other          : +0.09
+  - Quantum        : +0.00
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+KLAC       | Semiconductor   | +2.09      | +0.52        | +0.25        | 0.83        | CONFIRM    | Confidence score (0.83) meets thres
+FORM       | Other           | +1.53      | +0.09        | +0.25        | 0.71        | CONFIRM    | Confidence score (0.71) meets thres
+LRCX       | Semiconductor   | +1.23      | +0.48        | +0.25        | 0.78        | CONFIRM    | Confidence score (0.78) meets thres
+ARQQ       | Quantum         | +1.19      | +0.00        | +0.25        | 0.67        | CONFIRM    | Confidence score (0.67) meets thres
+VIAV       | Other           | +1.05      | +0.00        | +0.25        | 0.67        | CONFIRM    | Confidence score (0.67) meets thres

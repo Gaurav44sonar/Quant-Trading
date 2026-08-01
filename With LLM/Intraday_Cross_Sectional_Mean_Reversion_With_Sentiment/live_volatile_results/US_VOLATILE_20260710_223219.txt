@@ -1,0 +1,166 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-10 13:02:19
+End Time                : 2026-07-10 15:05:30
+Duration                : 02:03:10
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 64.43%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.21%          -0.21%
+Cumulative Return                        0.00%          -0.22%          -0.22%
+Best Trade                               0.00%           0.69%           0.69%
+Worst Trade                              0.00%          -1.42%          -1.42%
+Total P&L                                $0.00        $-214.42        $-214.42
+CAGR (annualized)                        0.00%         -41.98%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -4.12           -4.12
+Sortino Ratio                             0.00           -7.44           -7.44
+Max Drawdown                             0.00%          -2.86%          -2.86%
+Volatility (Ann.)                        0.00%          12.98%          12.98%
+Win Rate                                 0.00%          50.00%          50.00%
+Win/Loss Ratio                            0.00            0.55            0.55
+Avg Win                                  0.00%           0.53%           0.53%
+Avg Loss                                 0.00%          -0.95%          -0.95%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:18:35        01:18:35
+Avg Time to MFE (min)                      0.0            63.4            63.4
+Avg Time to MAE (min)                      0.0            93.5            93.5
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : AMAT, INTC, KLAC, MARA, MRNA, RIOT
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.21%          -0.21%
+Cumulative Return                        0.00%          -0.22%          -0.22%
+Best Trade                               0.00%           0.69%           0.69%
+Worst Trade                              0.00%          -1.42%          -1.42%
+Total P&L                                $0.00        $-214.42        $-214.42
+CAGR (annualized)                        0.00%         -41.98%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -4.12           -4.12
+Sortino Ratio                             0.00           -7.44           -7.44
+Max Drawdown                             0.00%          -2.86%          -2.86%
+Volatility (Ann.)                        0.00%          12.98%          12.98%
+Win Rate                                 0.00%          50.00%          50.00%
+Win/Loss Ratio                            0.00            0.55            0.55
+Avg Win                                  0.00%           0.53%           0.53%
+Avg Loss                                 0.00%          -0.95%          -0.95%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        01:18:35        01:18:35
+Avg Time to MFE (min)                      0.0            63.4            63.4
+Avg Time to MAE (min)                      0.0            93.5            93.5
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+MRNA           | 1        | 0      | 1        | 0.0%       | $-56.33      | $0.00          | $56.33         | 00:07:32     | -0.06%       | +26.3%      
+MARA           | 1        | 0      | 1        | 0.0%       | $-235.95     | $0.00          | $235.95        | 02:02:42     | -0.24%       | +110.0%     
+RIOT           | 1        | 0      | 1        | 0.0%       | $-182.74     | $0.00          | $182.74        | 02:02:41     | -0.18%       | +85.2%      
+KLAC           | 1        | 1      | 0        | 100.0%     | $+42.21      | $42.21         | $0.00          | 02:02:41     | +0.04%       | -19.7%      
+INTC           | 1        | 1      | 0        | 100.0%     | $+106.21     | $106.21        | $0.00          | 02:02:41     | +0.11%       | -49.5%      
+AMAT           | 1        | 1      | 0        | 100.0%     | $+112.17     | $112.17        | $0.00          | 02:02:40     | +0.11%       | -52.3%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, AMAT, AMBA, AMKR, ARM, ARQQ, BLDP, BTBT, BTDR, CEVA, CIFR, CLSK, ENPH, FORM, HAIN, HUT, INTC, IREN, KLAC, LCID, LITE, LRCX, MARA, MRNA, MRVL, MSTR, MU, MVIS, ON, QUBT, RGTI, RIOT, RMBS, RUN, SEDG, SITM, SMTC, SPWR, VIAV
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-10 13:02:34
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion\live_volatile_results\US_VOLATILE_20260710_223219.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.09
+Average Sentiment Score : +0.08
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 240
+Duplicate Articles Duped: 35
+Confirmed Trades        : 6
+Rejected Trades (Negative): 0
+Held Trades (Low Conf)  : 0
+
+Sector Sentiments:
+  - Other          : -0.15
+  - Crypto         : +0.14
+  - Semiconductor  : +0.12
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+MRNA       | Other           | +2.83      | -0.15        | +0.09        | 0.67        | CONFIRM    | Confidence score (0.67) meets thres
+MARA       | Crypto          | +1.85      | +0.23        | +0.09        | 0.74        | CONFIRM    | Confidence score (0.74) meets thres
+RIOT       | Crypto          | +1.20      | +0.05        | +0.09        | 0.68        | CONFIRM    | Confidence score (0.68) meets thres
+KLAC       | Semiconductor   | +1.20      | +0.21        | +0.09        | 0.70        | CONFIRM    | Confidence score (0.70) meets thres
+INTC       | Semiconductor   | +1.10      | +0.08        | +0.09        | 0.67        | CONFIRM    | Confidence score (0.67) meets thres
+AMAT       | Semiconductor   | +1.04      | +0.07        | +0.09        | 0.67        | CONFIRM    | Confidence score (0.67) meets thres

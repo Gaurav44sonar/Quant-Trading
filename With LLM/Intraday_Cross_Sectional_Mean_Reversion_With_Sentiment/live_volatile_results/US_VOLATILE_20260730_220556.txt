@@ -1,0 +1,160 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-07-30 12:35:56
+End Time                : 2026-07-30 15:06:07
+Duration                : 02:30:10
+Execution Status        : DURATION_COMPLETED
+Exposure %              : 19.51%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           1.79%           1.79%
+Cumulative Return                        0.00%           1.79%           1.79%
+Best Trade                               0.00%           1.79%           1.79%
+Worst Trade                              0.00%           1.79%           1.79%
+Total P&L                                $0.00         $359.82         $359.82
+CAGR (annualized)                        0.00%        8708.90%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           1.79%           1.79%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:23:28        02:23:28
+Avg Time to MFE (min)                      0.0           143.5           143.5
+Avg Time to MAE (min)                      0.0           143.5           143.5
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : RGTI
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           1.79%           1.79%
+Cumulative Return                        0.00%           1.79%           1.79%
+Best Trade                               0.00%           1.79%           1.79%
+Worst Trade                              0.00%           1.79%           1.79%
+Total P&L                                $0.00         $359.82         $359.82
+CAGR (annualized)                        0.00%        8708.90%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%         100.00%         100.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           1.79%           1.79%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        02:23:28        02:23:28
+Avg Time to MFE (min)                      0.0           143.5           143.5
+Avg Time to MAE (min)                      0.0           143.5           143.5
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+RGTI           | 1        | 1      | 0        | 100.0%     | $+359.82     | $359.82        | $0.00          | 02:23:28     | +0.36%       | +100.0%     
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ACLS, ALGM, ALNY, AMAT, AMD, AMKR, ARM, ARQQ, BTBT, BTDR, CEVA, CIFR, CLSK, FORM, GFAI, HUT, INO, INTC, IOVA, IREN, LCID, LITE, LRCX, MARA, MKSI, MRVL, MU, MVIS, OPEN, RGTI, RIOT, RMBS, RPD, SEDG, SMCI, SMTC, SPWR, TENB, VIAV, WIMI
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-07-30 12:36:23
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : DURATION_COMPLETED
+Duration Completed Flag : True
+Manual Stop Flag        : False
+Runtime Errors          : None
+API/Data Issues         : Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.; Failed to fetch live bars during monitoring: No valid QQQ benchmark index bars downloaded.
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\GS\Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment\live_volatile_results\US_VOLATILE_20260730_220556.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.11
+Average Sentiment Score : +0.01
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 151
+Duplicate Articles Duped: 23
+Confirmed Trades        : 1
+Rejected Trades (Negative): 0
+Held Trades (Low Conf)  : 4
+
+Sector Sentiments:
+  - Quantum        : +0.12
+  - CleanEnergy    : +0.07
+  - Other          : -0.13
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+RGTI       | Quantum         | +0.05      | +0.12        | +0.11        | 0.54        | CONFIRM    | Confidence score (0.54) meets thres
+ARQQ       | Quantum         | -0.38      | +0.00        | +0.11        | 0.46        | HOLD       | Borderline confidence score (0.46) 
+SEDG       | CleanEnergy     | -0.57      | +0.07        | +0.11        | 0.44        | HOLD       | Borderline confidence score (0.44) 
+RPD        | Other           | -0.83      | +0.00        | +0.11        | 0.38        | HOLD       | Borderline confidence score (0.38) 
+ALNY       | Other           | -0.87      | -0.13        | +0.11        | 0.36        | HOLD       | Borderline confidence score (0.36) 

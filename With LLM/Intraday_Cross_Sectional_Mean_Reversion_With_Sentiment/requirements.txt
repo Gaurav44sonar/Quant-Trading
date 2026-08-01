@@ -1,0 +1,35 @@
+# NASDAQ Intraday Cross-Sectional Mean Reversion
+# Python dependencies
+
+# Data
+yfinance>=1.2.2
+polygon-api-client>=1.14.0
+python-dotenv>=1.2.2
+pyarrow>=23.0.1
+requests>=2.34.2
+
+# Core
+numpy>=1.26.4
+pandas>=2.2.0
+scipy>=1.17.1
+
+# Config
+PyYAML>=6.0.3
+
+# Timezone
+pytz>=2026.1
+
+# Testing
+pytest>=8.0.0
+backtesting>=0.6.5
+alpaca-py>=0.37.0
+
+# Sentiment
+vaderSentiment>=3.3.2
+
+# LLM Decision Layer
+google-generativeai>=0.8.0
+pydantic>=2.0
+
+
+
