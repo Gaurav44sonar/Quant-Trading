@@ -30,6 +30,7 @@ class DecisionEngine:
             reset_seconds=self.config.circuit_breaker_reset_seconds,
         )
         self.logger = DecisionLogger(self.config.log_file)
+        self._exit_bar_counter = 0  # Throttle: count bars between LLM exit calls
 
     @classmethod
     def from_config(cls, config_path: str = "config/config.yaml") -> "DecisionEngine":
@@ -70,6 +71,7 @@ class DecisionEngine:
         system_prompt = PromptBuilder.get_system_prompt()
         user_prompt = PromptBuilder.build_entry_prompt(picks, market_info, portfolio_info, timestamp_str)
 
+        raw_text = ""
         try:
             raw_text, latency_ms = self.client.generate_json(system_prompt, user_prompt)
             response: EntryResponse = ResponseParser.parse_entry_response(raw_text)
@@ -116,7 +118,7 @@ class DecisionEngine:
             reason = str(e)
             log.warning(f"[LLM ENTRY FAILURE] {reason}. Falling back to original picks.")
             fb_response = FallbackHandler.fallback_entry(picks, reason)
-            self.logger.log_call("entry_validation", 0.0, user_prompt, "", fb_response.model_dump(), fallback_used=True, error_msg=reason)
+            self.logger.log_call("entry_validation", 0.0, user_prompt, raw_text, fb_response.model_dump(), fallback_used=True, error_msg=reason)
             return picks
 
     def evaluate_exit(
@@ -137,6 +139,13 @@ class DecisionEngine:
         active_states = {k: v for k, v in tracking_states.items() if v.get("active")}
         if not active_states or not self.config.enabled or not self.config.exit_validation:
             return {}
+
+        # Throttle: only call LLM every N bars to conserve free-tier quota
+        self._exit_bar_counter += 1
+        if self._exit_bar_counter < self.config.exit_check_interval_bars:
+            log.info(f"[LLM EXIT] Throttled — bar {self._exit_bar_counter}/{self.config.exit_check_interval_bars}. Using standard risk rules.")
+            return {}
+        self._exit_bar_counter = 0  # Reset counter
 
         if not self.circuit_breaker.is_allowed():
             log.info("[LLM EXIT] Circuit breaker OPEN. Using original risk rules.")

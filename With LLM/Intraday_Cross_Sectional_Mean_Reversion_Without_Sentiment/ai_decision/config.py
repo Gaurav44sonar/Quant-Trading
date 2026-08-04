@@ -24,6 +24,7 @@ class LLMConfig:
     circuit_breaker_reset_seconds: float = 60.0
     entry_validation: bool = True
     exit_validation: bool = True
+    exit_check_interval_bars: int = 3  # Only call LLM every Nth bar (1=every bar, 3=every 15min)
     temperature: float = 0.0
     max_tokens: int = 4000
     log_file: str = "live_volatile_results/llm_decisions.jsonl"
@@ -48,6 +49,7 @@ class LLMConfig:
                         cfg.circuit_breaker_reset_seconds = float(llm_data.get("circuit_breaker_reset_seconds", cfg.circuit_breaker_reset_seconds))
                         cfg.entry_validation = llm_data.get("entry_validation", cfg.entry_validation)
                         cfg.exit_validation = llm_data.get("exit_validation", cfg.exit_validation)
+                        cfg.exit_check_interval_bars = int(llm_data.get("exit_check_interval_bars", cfg.exit_check_interval_bars))
                         cfg.temperature = float(llm_data.get("temperature", cfg.temperature))
                         cfg.max_tokens = int(llm_data.get("max_tokens", cfg.max_tokens))
                         cfg.log_file = llm_data.get("log_file", cfg.log_file)

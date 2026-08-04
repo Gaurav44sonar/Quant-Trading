@@ -289,6 +289,10 @@ class SentimentDecisionEngine:
                 confirmed_pick = pick.copy()
                 confirmed_pick["sentiment_score"] = comp_pol
                 confirmed_pick["sentiment_confidence"] = confidence
+                # Add the most relevant headline for LLM context
+                if ticker_articles[ticker]:
+                    best_art = max(ticker_articles[ticker], key=lambda x: x[2])  # highest weight = most recent
+                    confirmed_pick["news_headline"] = best_art[0].headline
                 confirmed_picks.append(confirmed_pick)
                 
         # Package report summary

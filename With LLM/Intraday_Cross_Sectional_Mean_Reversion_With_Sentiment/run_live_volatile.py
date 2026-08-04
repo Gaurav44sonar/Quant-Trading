@@ -897,6 +897,15 @@ def run_universe_session(
             termination_reason = "CONNECTION_FAILURE"
             raise e
             
+    # Create LLM exit engine once so bar counter persists across iterations
+    llm_engine_exit = None
+    if not no_llm:
+        try:
+            from ai_decision import DecisionEngine
+            llm_engine_exit = DecisionEngine.from_config()
+        except Exception as e:
+            log.warning(f"[LLM EXIT] Could not initialize DecisionEngine: {e}. LLM exit checks disabled.")
+
     try:
         log.info("Starting volatile execution loop...")
         while True:
@@ -1340,10 +1349,8 @@ def run_universe_session(
 
                 # ── LLM EXIT DECISION LAYER ───────────────────────────
                 llm_exit_decisions = {}
-                if not no_llm:
+                if not no_llm and llm_engine_exit is not None:
                     try:
-                        from ai_decision import DecisionEngine
-                        llm_engine_exit = DecisionEngine.from_config()
                         llm_exit_decisions = llm_engine_exit.evaluate_exit(
                             tracking_states=tracking_states,
                             today_close=today_close,
@@ -1364,6 +1371,8 @@ def run_universe_session(
                         
                     if ticker not in today_close.columns or ticker not in today_high.columns or ticker not in today_low.columns:
                         log.warning(f"  Missing price data for {ticker} in current bar.")
+                        fallback_price = state.get("current_price", state["entry_price"])
+                        active_positions_value += state["qty"] * fallback_price
                         continue
                         
                     bar_close = today_close.iloc[last_idx][ticker]
@@ -1371,8 +1380,11 @@ def run_universe_session(
                     bar_low = today_low.iloc[last_idx][ticker]
                     
                     if pd.isna(bar_close) or bar_close <= 0:
+                        fallback_price = state.get("current_price", state["entry_price"])
+                        active_positions_value += state["qty"] * fallback_price
                         continue
                         
+                    state["current_price"] = bar_close
                     current_bar_check_prices[ticker] = bar_close
                     active_positions_value += state["qty"] * bar_close
                     
@@ -1403,8 +1415,10 @@ def run_universe_session(
                                 state["qty"] -= sold
                                 state["exits"].append((sold, bar_close, now))
                         elif llm_dec.action.upper() == "TIGHTEN_STOPS" and llm_dec.adjusted_trail_trigger:
-                            trail_trigger = min(trail_trigger, llm_dec.adjusted_trail_trigger)
-                            log.info(f"  [LLM TIGHTEN STOPS] Adjusted trailing trigger for {ticker} to {trail_trigger*100:.2f}%")
+                            current_trigger = state.get("adjusted_trail_trigger", trail_trigger)
+                            new_trigger = min(current_trigger, llm_dec.adjusted_trail_trigger)
+                            state["adjusted_trail_trigger"] = new_trigger
+                            log.info(f"  [LLM TIGHTEN STOPS] Adjusted trailing trigger for {ticker} to {new_trigger*100:.2f}%")
                     # ───────────────────────────────────────────────────────
 
                     
@@ -1455,7 +1469,8 @@ def run_universe_session(
                             continue
                             
                     # Trailing Stop
-                    if state["high_water"] >= entry_price * (1 + trail_trigger):
+                    eff_trail_trigger = state.get("adjusted_trail_trigger", trail_trigger)
+                    if state["high_water"] >= entry_price * (1 + eff_trail_trigger):
                         trail_price = state["high_water"] * (1 - trail_pct)
                         if bar_low <= trail_price:
                             log.info(f"  [TRAILING STOP] Breached: {ticker} Low: {bar_low:.2f} <= Trail Price: {trail_price:.2f}")

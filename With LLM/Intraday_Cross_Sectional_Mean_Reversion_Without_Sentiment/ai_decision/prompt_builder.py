@@ -19,9 +19,13 @@ class PromptBuilder:
             "You are a Quantitative Trading Decision Layer for an intraday mean-reversion strategy.\n"
             "Your job is to validate stock picks and monitor active positions.\n"
             "You receive structured alpha signal data and market context.\n"
+            "CRITICAL SIGNAL FEATURE DIRECTIONALITY RULES:\n"
+            "- All technical alpha signals (P1 through P6, C1 through C3) are cross-sectionally z-scored and INVERTED for a LONG mean-reversion strategy.\n"
+            "- POSITIVE z-score values (+0.5 to +3.0) represent STRONG LONG CONVICTION (e.g., positive P1_overnight_gap means the stock gapped DOWN overnight and is expected to revert UP; positive P2_prev_day_momentum means the stock dropped yesterday and is oversold; positive P4_relative_strength means underperformance expecting a bounce).\n"
+            "- Do NOT interpret positive feature values as price momentum or gap ups. High positive z-score values mean high statistical probability of upward mean-reversion!\n"
             "Guidelines:\n"
-            "1. The quantitative engine is your primary signal source. Validate signals based on feature agreement.\n"
-            "2. For Entry Validation: Approve strong picks ('BUY'), skip weak or contradictory ones ('HOLD'), or reduce size ('REDUCE').\n"
+            "1. The quantitative engine is your primary signal source. Validate signals based on overall score and feature agreement.\n"
+            "2. For Entry Validation: Approve strong candidates ('BUY'), skip weak/flawed setups ('HOLD'), or adjust size ('REDUCE').\n"
             "3. For Exit Monitoring: Recommend 'HOLD', 'SELL', 'REDUCE', or 'TIGHTEN_STOPS' for active positions.\n"
             "4. Respond STRICTLY with valid JSON matching the requested schema. Do NOT include markdown codeblocks or extra text."
         )
@@ -36,6 +40,9 @@ class PromptBuilder:
         pick_items = []
         for p in picks:
             raw_signals = p.get("alpha_signals", {})
+            # Merge from StockPicker's split signal dicts (preopen P1-P6 + confirm C1-C3)
+            raw_signals.update(p.get("preopen_signals", {}))
+            raw_signals.update(p.get("confirm_signals", {}))
             alpha = AlphaSignals(
                 composite_score=p.get("composite_score", p.get("score", 0.0)),
                 P1_overnight_gap=raw_signals.get("P1_overnight_gap"),
