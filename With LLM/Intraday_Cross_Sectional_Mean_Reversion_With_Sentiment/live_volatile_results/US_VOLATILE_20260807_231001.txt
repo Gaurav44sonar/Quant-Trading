@@ -1,0 +1,162 @@
+================================================================================
+INTRADAY MEAN-REVERSION LIVE SESSION REPORT: US - VOLATILE
+================================================================================
+
+==================================================
+SECTION 1: OVERALL PERFORMANCE SUMMARY
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Total Universe Size     : 40 Stocks
+Start Time              : 2026-08-07 13:40:01
+End Time                : 2026-08-07 14:42:22
+Duration                : 01:02:20
+Execution Status        : MANUAL_STOP
+Exposure %              : 33.82%
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.37%          -0.37%
+Cumulative Return                        0.00%          -0.71%          -0.71%
+Best Trade                               0.00%           0.92%           0.92%
+Worst Trade                              0.00%          -1.60%          -1.60%
+Total P&L                                $0.00        $-355.13        $-355.13
+CAGR (annualized)                        0.00%         -83.31%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -6.23           -6.23
+Sortino Ratio                             0.00           -8.95           -8.95
+Max Drawdown                             0.00%          -2.38%          -2.38%
+Volatility (Ann.)                        0.00%          14.76%          14.76%
+Win Rate                                 0.00%          25.00%          25.00%
+Win/Loss Ratio                            0.00            1.16            1.16
+Avg Win                                  0.00%           0.92%           0.92%
+Avg Loss                                 0.00%          -0.79%          -0.79%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:48:26        00:48:26
+Avg Time to MFE (min)                      0.0            48.1            48.1
+Avg Time to MAE (min)                      0.0            49.4            49.4
+
+==================================================
+SECTION 2: VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : GRPN, MARA, TTD, XNCR
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%          -0.37%          -0.37%
+Cumulative Return                        0.00%          -0.71%          -0.71%
+Best Trade                               0.00%           0.92%           0.92%
+Worst Trade                              0.00%          -1.60%          -1.60%
+Total P&L                                $0.00        $-355.13        $-355.13
+CAGR (annualized)                        0.00%         -83.31%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00           -6.23           -6.23
+Sortino Ratio                             0.00           -8.95           -8.95
+Max Drawdown                             0.00%          -2.38%          -2.38%
+Volatility (Ann.)                        0.00%          14.76%          14.76%
+Win Rate                                 0.00%          25.00%          25.00%
+Win/Loss Ratio                            0.00            1.16            1.16
+Avg Win                                  0.00%           0.92%           0.92%
+Avg Loss                                 0.00%          -0.79%          -0.79%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:48:26        00:48:26
+Avg Time to MFE (min)                      0.0            48.1            48.1
+Avg Time to MAE (min)                      0.0            49.4            49.4
+
+==================================================
+SECTION 3: NON-VOLATILE STOCKS PERFORMANCE
+==================================================
+Selected Stocks         : None
+
+💰 RETURN METRICS
+--------------------------------------------------------------------------------
+Avg Return                               0.00%           0.00%           0.00%
+Cumulative Return                        0.00%           0.00%           0.00%
+Best Trade                               0.00%           0.00%           0.00%
+Worst Trade                              0.00%           0.00%           0.00%
+Total P&L                                $0.00           $0.00           $0.00
+CAGR (annualized)                        0.00%           0.00%              --
+
+⚠ RISK METRICS
+--------------------------------------------------------------------------------
+Sharpe Ratio                              0.00            0.00            0.00
+Sortino Ratio                             0.00            0.00            0.00
+Max Drawdown                             0.00%           0.00%           0.00%
+Volatility (Ann.)                        0.00%           0.00%           0.00%
+Win Rate                                 0.00%           0.00%           0.00%
+Win/Loss Ratio                            0.00            0.00            0.00
+Avg Win                                  0.00%           0.00%           0.00%
+Avg Loss                                 0.00%           0.00%           0.00%
+
+⏱ TIMING METRICS
+--------------------------------------------------------------------------------
+Average holding Period                00:00:00        00:00:00        00:00:00
+Avg Time to MFE (min)                      0.0             0.0             0.0
+Avg Time to MAE (min)                      0.0             0.0             0.0
+
+==================================================
+SECTION 4: STOCK-WISE PERFORMANCE BREAKDOWN
+==================================================
+Symbol         | Trades   | Wins   | Losses   | Win Rate   | Net PnL      | Gross Profit   | Gross Loss     | Duration     | Contrib% Cap | Contrib% PnL
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+TTD            | 1        | 0      | 1        | 0.0%       | $-2.56       | $0.00          | $2.56          | 01:01:09     | -0.00%       | +0.7%       
+MARA           | 1        | 0      | 1        | 0.0%       | $-76.24      | $0.00          | $76.24         | 01:01:08     | -0.08%       | +21.5%      
+GRPN           | 1        | 0      | 1        | 0.0%       | $-322.31     | $0.00          | $322.31        | 00:14:06     | -0.32%       | +90.8%      
+XNCR           | 1        | 1      | 0        | 100.0%     | $+45.98      | $45.98         | $0.00          | 01:01:08     | +0.05%       | -12.9%      
+
+==================================================
+SECTION 5: UNIVERSE INFORMATION
+==================================================
+Universe Type           : VOLATILE
+Volatile Stocks List    : ALGM, AMD, AMKR, ANGI, ARM, ARQQ, BLDP, BTBT, BTDR, BYND, CEVA, CIFR, CLSK, EVGO, FORM, GFAI, GRPN, HUT, INO, INTC, IOVA, IREN, LCID, LITE, LRCX, MARA, MKSI, MRVL, MU, MVIS, OPEN, RIOT, SEDG, SMCI, SMTC, SPWR, TTD, WIMI, WIX, XNCR
+Non-Volatile Stocks List: 
+Ranking Method Used     : trailing_atr_15d
+Selection Timestamp     : 2026-08-07 13:40:44
+
+==================================================
+SECTION 6: SYSTEM INFORMATION
+==================================================
+Market                  : US
+Universe Type           : VOLATILE
+Termination Reason      : MANUAL_STOP
+Duration Completed Flag : False
+Manual Stop Flag        : True
+Runtime Errors          : None
+API/Data Issues         : None
+Report Generation Status: SUCCESS
+Report Save Location    : C:\My Programs\Internship\Herbs Magic\Quant-Trading\With LLM\Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment\live_volatile_results\US_VOLATILE_20260807_231001.txt
+
+==================================================
+SECTION 7: NEWS SENTIMENT ANALYSIS
+==================================================
+Overall Market Sentiment: +0.03
+Average Sentiment Score : -0.20
+News Sources Used       : Yahoo Finance, Google News
+Articles Processed      : 156
+Duplicate Articles Duped: 21
+Confirmed Trades        : 4
+Rejected Trades (Negative): 1
+Held Trades (Low Conf)  : 0
+
+Sector Sentiments:
+  - Other          : -0.05
+  - Crypto         : -0.43
+
+==================================================
+SECTION 8: STOCK-WISE NEWS ANALYSIS
+==================================================
+Symbol     | Sector          | Signal(z)  | Ticker Sent  | Market Sent  | Final Conf  | Decision   | Reason                             
+----------------------------------------------------------------------------------------------------------------------------------------
+TTD        | Other           | +3.04      | -0.36        | +0.03        | 0.64        | CONFIRM    | Confidence score (0.64) meets thres
+MARA       | Crypto          | +1.10      | -0.28        | +0.03        | 0.57        | CONFIRM    | Confidence score (0.57) meets thres
+GRPN       | Other           | +1.00      | +0.08        | +0.03        | 0.65        | CONFIRM    | Confidence score (0.65) meets thres
+CIFR       | Crypto          | +0.82      | -0.57        | +0.03        | 0.50        | REJECT     | Strong negative news sentiment (-0.
+XNCR       | Other           | +0.78      | +0.14        | +0.03        | 0.63        | CONFIRM    | Confidence score (0.63) meets thres

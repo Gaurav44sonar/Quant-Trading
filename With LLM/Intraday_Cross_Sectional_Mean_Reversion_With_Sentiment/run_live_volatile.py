@@ -210,10 +210,8 @@ def fetch_yfinance_panels(
     
     if lookback_days <= 5:
         period_str = "5d"
-    elif lookback_days <= 20:
-        period_str = "1mo"
     else:
-        period_str = "60d"
+        period_str = "1mo"
         
     try:
         df_hist = yf.download(
