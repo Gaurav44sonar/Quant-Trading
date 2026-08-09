@@ -1,0 +1,33 @@
+services:
+  - type: worker
+    name: quant-trading-scheduler
+    runtime: python
+    region: oregon       # Render's Oregon region — good for both EST and IST coverage
+    plan: starter        # Starter ($7/mo) = always-on, no spin-down. Required for 24/7 scheduling.
+
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+
+    startCommand: python scheduler.py
+
+    # Render will inject these as environment variables.
+    # Set the actual secret values in the Render dashboard → Environment tab.
+    envVars:
+      - key: ALPACA_API_KEY
+        sync: false                     # Set value in Render dashboard
+
+      - key: ALPACA_SECRET_KEY
+        sync: false                     # Set value in Render dashboard
+
+      - key: GOOGLE_SHEET_ID
+        sync: false                     # Set value in Render dashboard
+
+      - key: GOOGLE_SERVICE_ACCOUNT_JSON
+        sync: false                     # Paste full contents of google_credentials.json here
+
+      - key: PYTHONUNBUFFERED
+        value: "1"                      # Ensures logs appear in real-time in Render dashboard
+
+      - key: TZ
+        value: "UTC"                    # Render server runs in UTC; scheduler handles tz conversions

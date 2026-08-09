@@ -1,0 +1,85 @@
+name: "US Market — With Sentiment"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Fires at 9:30 AM EST/EDT every weekday (Mon–Fri)
+#
+# ⚠ Daylight Saving Time (DST) Note:
+#   Summer (EDT, Mar–Nov): 9:30 AM EDT = 13:30 UTC  ← cron below
+#   Winter (EST, Nov–Mar): 9:30 AM EST = 14:30 UTC  ← fires 1h early in winter
+#
+# To handle winter EST, update the cron to "30 14 * * 1-5" between Nov–Mar.
+# ─────────────────────────────────────────────────────────────────────────────
+on:
+  schedule:
+    - cron: "30 13 * * 1-5"   # 13:30 UTC = 09:30 EDT (summer). Update for EST winter.
+
+  # Manual trigger — useful for testing any time
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Pass --dry-run flag (no real orders)"
+        type: boolean
+        default: false
+
+jobs:
+  run-us-with-sentiment:
+    name: "NASDAQ | With Sentiment | run_live_volatile.py"
+    runs-on: ubuntu-latest
+    timeout-minutes: 360          # GitHub Actions hard limit = 6h
+
+    steps:
+      # ── 1. Checkout repo ───────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Set up Python ───────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      # ── 3. Install dependencies ────────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt
+
+      # ── 4. Write Google credentials from secret ────────────────────────────
+      - name: Write Google credentials
+        run: |
+          echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > google_credentials.json
+
+      # ── 5. Run strategy ────────────────────────────────────────────────────
+      - name: Run With Sentiment — US
+        env:
+          ALPACA_API_KEY:    ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          GOOGLE_SHEET_ID:   ${{ secrets.GOOGLE_SHEET_ID }}
+          PYTHONUNBUFFERED:  "1"
+        run: |
+          cd "Without LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment"
+          python run_live_volatile.py \
+            --market us \
+            --duration 5.5 \
+            --picks 40
+
+      # ── 6. Sync results to Google Sheets ───────────────────────────────────
+      - name: Sync results → Google Sheets
+        if: always()
+        env:
+          GOOGLE_SHEET_ID:              ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON:  ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          python sync_results.py --strategy with_sentiment --market us
+
+      # ── 7. Upload logs as GitHub artifact (available for 7 days) ──────────
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: us-with-sentiment-logs-${{ github.run_id }}
+          path: |
+            Without LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment/live_volatile_results/*.log
+            Without LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment/live_volatile_results/*.txt
+          retention-days: 7
+          if-no-files-found: warn

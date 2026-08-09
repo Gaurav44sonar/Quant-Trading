@@ -1,0 +1,40 @@
+# ============================================================
+# Quant-Trading — Combined Root Requirements for Render
+# Merges Without_Sentiment + With_Sentiment strategy deps
+# ============================================================
+
+# ── Data ─────────────────────────────────────────────────────
+yfinance>=1.2.2
+polygon-api-client>=1.14.0
+python-dotenv>=1.2.2
+pyarrow>=23.0.1
+requests>=2.34.2
+
+# ── Core Numerics ─────────────────────────────────────────────
+numpy>=1.26.4
+pandas>=2.2.0
+scipy>=1.17.1
+
+# ── Config ────────────────────────────────────────────────────
+PyYAML>=6.0.3
+
+# ── Timezone ──────────────────────────────────────────────────
+pytz>=2026.1
+
+# ── Alpaca Trading ────────────────────────────────────────────
+alpaca-py>=0.37.0
+
+# ── Sentiment (for With_Sentiment strategy) ───────────────────
+vaderSentiment>=3.3.2
+
+# ── Google Sheets Sync ────────────────────────────────────────
+gspread>=6.0.0
+google-auth>=2.29.0
+google-auth-oauthlib>=1.2.0
+
+# ── Testing (optional but kept for parity) ────────────────────
+pytest>=8.0.0
+backtesting>=0.6.5
+
+# ── openpyxl for Excel file writes (update_volatile_excel.py) ─
+openpyxl>=3.1.2

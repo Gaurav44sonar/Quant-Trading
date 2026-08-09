@@ -217,3 +217,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── Quant-Trading / Render Specific ──────────────────────────────────────────
+
+# Google credentials — NEVER commit these
+google_credentials.json
+credentials.json
+**/google_credentials.json
+**/credentials.json
+
+# Excel result files (large binary, synced to Google Sheets instead)
+*.xlsx
+
+# Live trading logs and reports (generated at runtime, not source code)
+**/live_logs/
+**/live_reports/
+**/live_volatile_results/
+**/Indian_log_volatile/
+**/live_state_*.json
+**/reports/
+
+# Scheduler state
+scheduler_state.json
