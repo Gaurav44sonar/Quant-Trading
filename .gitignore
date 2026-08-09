@@ -156,6 +156,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+google_credentials.json
 
 # Spyder project settings
 .spyderproject
