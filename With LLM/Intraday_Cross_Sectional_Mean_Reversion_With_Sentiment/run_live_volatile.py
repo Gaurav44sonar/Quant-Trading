@@ -1740,6 +1740,12 @@ def run_universe_session(
                 with open(report_save_path, "w", encoding="utf-8") as f:
                     f.write(report_text)
                 log.info(f"Report successfully saved to {report_save_path}")
+                try:
+                    from update_volatile_excel import update_volatile_excel
+                    update_volatile_excel()
+                    log.info("Automatically updated Excel and Google Sheets volatile results summary.")
+                except Exception as ex_excel:
+                    log.warning(f"Could not auto-update Excel/Google Sheets results summary: {ex_excel}")
             except Exception as e:
                 log.error(f"Failed to write report to {report_save_path}: {e}")
                 
@@ -1880,6 +1886,12 @@ if __name__ == "__main__":
         log.info(SEP)
         log.info(f"COMPLETED RUN for Market: {market.upper()} | Universe: VOLATILE")
         log.info(f"Report saved to: {report_save_path}")
+        try:
+            from update_volatile_excel import update_volatile_excel
+            update_volatile_excel()
+            log.info("Automatically updated Excel and Google Sheets volatile results summary.")
+        except Exception as ex_excel:
+            log.warning(f"Could not auto-update Excel/Google Sheets results summary: {ex_excel}")
         log.info(f"Log saved to: {log_file_path}")
         log.info(SEP)
             

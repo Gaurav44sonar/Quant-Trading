@@ -132,14 +132,20 @@ def style_and_save_excel(df, save_paths):
 
 def update_volatile_excel(workspace_dir="."):
     """
-    Main function to process US and Indian volatile report text files and export to Excel.
+    Main function to process US and Indian volatile report text files, export to Excel,
+    and sync records to Google Sheets.
     """
+    all_rows = []
+
     # 1. Process US Volatile Results
     us_dir = os.path.join(workspace_dir, "live_volatile_results")
     us_txt_files = sorted(glob.glob(os.path.join(us_dir, "US_VOLATILE_*.txt")))
     
     if us_txt_files:
         us_rows = [parse_report_file(f) for f in us_txt_files]
+        for r in us_rows:
+            r['Market'] = 'US'
+        all_rows.extend(us_rows)
         df_us = pd.DataFrame(us_rows)
         us_save_paths = [
             os.path.join(us_dir, "live_volatiles_results_all_us.xlsx"),
@@ -155,6 +161,9 @@ def update_volatile_excel(workspace_dir="."):
     
     if india_txt_files:
         india_rows = [parse_report_file(f) for f in india_txt_files]
+        for r in india_rows:
+            r['Market'] = 'INDIA'
+        all_rows.extend(india_rows)
         df_india = pd.DataFrame(india_rows)
         india_save_paths = [
             os.path.join(india_dir, "live_volatiles_results_all_india.xlsx"),
@@ -163,6 +172,19 @@ def update_volatile_excel(workspace_dir="."):
         style_and_save_excel(df_india, india_save_paths)
     else:
         print(f"No Indian volatile report .txt files found in {india_dir}")
+
+    # 3. Sync to Google Sheets
+    if all_rows:
+        try:
+            import sys
+            root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+            if root_dir not in sys.path:
+                sys.path.insert(0, root_dir)
+            from google_sheets_sync import sync_dataframe_to_tab
+            df_all = pd.DataFrame(all_rows)
+            sync_dataframe_to_tab("With LLM Without Sentiment", df_all)
+        except Exception as ex_gs:
+            print(f"[WARNING] Could not sync to Google Sheets: {ex_gs}")
 
 if __name__ == "__main__":
     update_volatile_excel()

@@ -35,18 +35,16 @@ def parse_report_file(filepath):
 
     row_data = {
         'date': date_part,
-        '_start_time': start_time_str  # For sorting chronologically
+        '_start_time': start_time_str
     }
     for key in target_keys:
         row_data[key] = ''
 
-    # Focus search within Section 1 (Overall Performance Summary)
     section1_lines = lines[:45]
     for line in section1_lines:
         for key in target_keys:
             if line.startswith(key):
                 rest = line[len(key):].strip()
-                # Tokens can be percentages, currency amounts, float values, or '--'
                 tokens = re.findall(r'[$₹]?[+-]?\d[\d,]*\.\d+%?|[$₹]?[+-]?\d+%?|--', rest)
                 
                 short_val = tokens[0] if len(tokens) >= 1 else ''
@@ -76,7 +74,6 @@ def style_and_save_excel(df, save_paths):
         'Avg Win', 'Avg Loss'
     ]
     
-    # Sort by start_time ascending
     if '_start_time' in df.columns:
         df = df.sort_values(by='_start_time', ascending=True)
         df = df.drop(columns=['_start_time'])
@@ -92,7 +89,6 @@ def style_and_save_excel(df, save_paths):
                 workbook = writer.book
                 worksheet = writer.sheets['Volatile Results']
 
-                # Header styling
                 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
                 header_fill = PatternFill(start_color="1F4E78", end_color="1F4E78", fill_type="solid")
                 header_font = Font(name="Calibri", size=11, bold=True, color="FFFFFF")
@@ -182,7 +178,7 @@ def update_volatile_excel(workspace_dir="."):
                 sys.path.insert(0, root_dir)
             from google_sheets_sync import sync_dataframe_to_tab
             df_all = pd.DataFrame(all_rows)
-            sync_dataframe_to_tab("Without LLM With Sentiment", df_all)
+            sync_dataframe_to_tab("With LLM With Sentiment", df_all)
         except Exception as ex_gs:
             print(f"[WARNING] Could not sync to Google Sheets: {ex_gs}")
 
