@@ -1,12 +1,13 @@
 name: "India Market — With Sentiment"
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Fires at 9:15 AM IST every weekday (Mon–Fri)
-# IST = UTC+5:30 → 9:15 AM IST = 03:45 AM UTC
+# Fires at 8:45 AM IST every weekday (Mon–Fri) = 03:15 UTC
+# 30 min early buffer absorbs GitHub cron delay (~15-45 min typical)
+# Script auto-waits for NSE market open at 9:15 AM IST internally.
 # ─────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
-    - cron: "45 3 * * 1-5"   # 03:45 UTC = 09:15 IST, Mon–Fri
+    - cron: "15 3 * * 1-5"   # 03:15 UTC = 08:45 IST (30 min before 9:15 IST open)
 
   # Manual trigger — useful for testing any time
   workflow_dispatch:

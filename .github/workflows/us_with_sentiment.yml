@@ -1,17 +1,14 @@
 name: "US Market — With Sentiment"
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Fires at 9:30 AM EST/EDT every weekday (Mon–Fri)
-#
-# ⚠ Daylight Saving Time (DST) Note:
-#   Summer (EDT, Mar–Nov): 9:30 AM EDT = 13:30 UTC  ← cron below
-#   Winter (EST, Nov–Mar): 9:30 AM EST = 14:30 UTC  ← fires 1h early in winter
-#
-# To handle winter EST, update the cron to "30 14 * * 1-5" between Nov–Mar.
+# Fires at 9:00 AM EDT every weekday (Mon–Fri) = 13:00 UTC
+# 30 min early buffer absorbs GitHub cron delay (~15-45 min typical)
+# Script auto-waits for NASDAQ market open at 9:30 AM EDT internally.
+# DST Note: Winter EST = UTC-5, so 9:00 AM EST = 14:00 UTC (update cron Nov-Mar)
 # ─────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
-    - cron: "30 13 * * 1-5"   # 13:30 UTC = 09:30 EDT (summer). Update for EST winter.
+    - cron: "0 13 * * 1-5"   # 13:00 UTC = 09:00 EDT (30 min before 9:30 EDT open)
 
   # Manual trigger — useful for testing any time
   workflow_dispatch:
