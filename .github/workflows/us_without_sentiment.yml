@@ -1,22 +1,12 @@
 name: "US Market — Without Sentiment"
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Fires at 9:00 AM EDT every weekday (Mon–Fri) = 13:00 UTC
-# 30 min early buffer absorbs GitHub cron delay (~15-45 min typical)
-# Script auto-waits for NASDAQ market open at 9:30 AM EDT internally.
-# DST Note: Winter EST = UTC-5, so 9:00 AM EST = 14:00 UTC (update cron Nov-Mar)
+# Triggered by cron-job.org at exact market open time (9:30 AM EDT = 13:30 UTC)
+# cron-job.org calls GitHub's workflow_dispatch API at precise times.
+# GitHub's built-in schedule cron was removed — it was unreliable (15-90 min delays).
 # ─────────────────────────────────────────────────────────────────────────────
 on:
-  schedule:
-    - cron: "0 13 * * 1-5"   # 13:00 UTC = 09:00 EDT (30 min before 9:30 EDT open)
-
-  # Manual trigger — useful for testing any time
-  workflow_dispatch:
-    inputs:
-      dry_run:
-        description: "Pass --dry-run flag (no real orders)"
-        type: boolean
-        default: false
+  workflow_dispatch:   # cron-job.org triggers this via GitHub API
 
 jobs:
   run-us-without-sentiment:

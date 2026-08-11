@@ -1,21 +1,12 @@
 name: "India Market — With Sentiment"
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Fires at 8:45 AM IST every weekday (Mon–Fri) = 03:15 UTC
-# 30 min early buffer absorbs GitHub cron delay (~15-45 min typical)
-# Script auto-waits for NSE market open at 9:15 AM IST internally.
+# Triggered by cron-job.org at exact market open time (9:15 AM IST = 3:45 AM UTC)
+# cron-job.org calls GitHub's workflow_dispatch API at precise times.
+# GitHub's built-in schedule cron was removed — it was unreliable (15-90 min delays).
 # ─────────────────────────────────────────────────────────────────────────────
 on:
-  schedule:
-    - cron: "15 3 * * 1-5"   # 03:15 UTC = 08:45 IST (30 min before 9:15 IST open)
-
-  # Manual trigger — useful for testing any time
-  workflow_dispatch:
-    inputs:
-      dry_run:
-        description: "Pass --dry-run flag (no real orders)"
-        type: boolean
-        default: false
+  workflow_dispatch:   # cron-job.org triggers this via GitHub API
 
 jobs:
   run-india-with-sentiment:
