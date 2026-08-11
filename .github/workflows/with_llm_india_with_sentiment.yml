@@ -48,6 +48,7 @@ jobs:
           ALPACA_SECRET_KEY:             ${{ secrets.ALPACA_SECRET_KEY }}
           GOOGLE_SHEET_ID:               ${{ secrets.GOOGLE_SHEET_ID }}
           GEMINI_API_KEY_WITH_SENTIMENT: ${{ secrets.GEMINI_API_KEY_WITH_SENTIMENT }}
+          GEMINI_API_KEY:                ${{ secrets.GEMINI_API_KEY_WITH_SENTIMENT }}
           PYTHONUNBUFFERED:              "1"
         run: |
           cd "With LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment"

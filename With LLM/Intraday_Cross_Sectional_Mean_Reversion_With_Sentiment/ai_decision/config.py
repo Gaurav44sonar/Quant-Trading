@@ -57,7 +57,12 @@ class LLMConfig:
                 log.warning(f"Could not load LLM config from {config_path}: {e}")
 
         # 2. Check environment variables
-        env_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+        env_key = (
+            os.getenv("GEMINI_API_KEY_WITH_SENTIMENT")
+            or os.getenv("GEMINI_API_KEY_WITHOUT_SENTIMENT")
+            or os.getenv("GEMINI_API_KEY")
+            or os.getenv("GOOGLE_API_KEY")
+        )
         if env_key:
             cfg.api_key = env_key
 
