@@ -10,7 +10,7 @@ on:
 
 jobs:
   run-us-without-sentiment:
-    name: "NASDAQ | Without Sentiment | run_live_volatile.py"
+    name: "NASDAQ | Without LLM | Without Sentiment | run_live_volatile.py"
     runs-on: ubuntu-latest
     timeout-minutes: 360          # GitHub Actions hard limit = 6h
 
@@ -37,12 +37,13 @@ jobs:
           echo '${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}' > google_credentials.json
 
       # ── 5. Run strategy ────────────────────────────────────────────────────
-      - name: Run Without Sentiment — US
+      - name: Run Without LLM Without Sentiment — US
         env:
-          ALPACA_API_KEY:    ${{ secrets.ALPACA_API_KEY }}
-          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
-          GOOGLE_SHEET_ID:   ${{ secrets.GOOGLE_SHEET_ID }}
-          PYTHONUNBUFFERED:  "1"
+          ALPACA_API_KEY:                   ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY:                ${{ secrets.ALPACA_SECRET_KEY }}
+          GOOGLE_SHEET_ID:                  ${{ secrets.GOOGLE_SHEET_ID }}
+          GEMINI_API_KEY_WITHOUT_SENTIMENT: ${{ secrets.GEMINI_API_KEY_WITHOUT_SENTIMENT }}
+          PYTHONUNBUFFERED:                 "1"
         run: |
           cd "Without LLM/Intraday_Cross_Sectional_Mean_Reversion_Without_Sentiment"
           python run_live_volatile.py \
@@ -50,8 +51,8 @@ jobs:
             --duration 5.5 \
             --picks 40
 
-      # ── 6. Sync results to Google Sheets ───────────────────────────────────
-      - name: Sync results → Google Sheets
+      # ── 6. Sync results -> Google Sheets ───────────────────────────────────
+      - name: Sync results -> Google Sheets
         if: always()
         env:
           GOOGLE_SHEET_ID:              ${{ secrets.GOOGLE_SHEET_ID }}
@@ -59,7 +60,7 @@ jobs:
         run: |
           python sync_results.py --strategy without_sentiment --market us
 
-      # ── 7. Upload logs as GitHub artifact (available for 7 days) ──────────
+      # ── 7. Upload logs as GitHub artifact (available for 7 days) ───────────
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
