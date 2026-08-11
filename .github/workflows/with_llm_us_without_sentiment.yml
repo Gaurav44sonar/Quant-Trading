@@ -7,7 +7,12 @@ name: "With LLM — US Without Sentiment"
 # DST Note: Winter EST (Nov-Mar) = 14:30 UTC — update cron-job.org schedule then.
 # ─────────────────────────────────────────────────────────────────────────────
 on:
-  workflow_dispatch:   # cron-job.org triggers this via GitHub API
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Pass --dry-run flag (no real orders)"
+        type: boolean
+        default: false
 
 jobs:
   run-with-llm-us-without-sentiment:

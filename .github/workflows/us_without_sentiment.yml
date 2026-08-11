@@ -6,7 +6,12 @@ name: "US Market — Without Sentiment"
 # GitHub's built-in schedule cron was removed — it was unreliable (15-90 min delays).
 # ─────────────────────────────────────────────────────────────────────────────
 on:
-  workflow_dispatch:   # cron-job.org triggers this via GitHub API
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Pass --dry-run flag (no real orders)"
+        type: boolean
+        default: false
 
 jobs:
   run-us-without-sentiment:

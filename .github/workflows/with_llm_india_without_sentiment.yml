@@ -6,7 +6,12 @@ name: "With LLM — India Without Sentiment"
 # cron-job.org URL: .../with_llm_india_without_sentiment.yml/dispatches
 # ─────────────────────────────────────────────────────────────────────────────
 on:
-  workflow_dispatch:   # cron-job.org triggers this via GitHub API
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Pass --dry-run flag (no real orders)"
+        type: boolean
+        default: true
 
 jobs:
   run-with-llm-india-without-sentiment:
