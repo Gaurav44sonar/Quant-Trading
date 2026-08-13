@@ -19,7 +19,7 @@ log = logging.getLogger(__name__)
 
 # Standard column schema for all strategy tabs
 COLUMNS_ORDER = [
-    'date', 'Market', 'Avg Return', 'Cumulative Return', 'Best Trade', 'Worst Trade',
+    'date', 'Market', 'Market Condition', 'Avg Return', 'Cumulative Return', 'Best Trade', 'Worst Trade',
     'Total P&L', 'CAGR (annualized)', 'Sharpe Ratio', 'Sortino Ratio',
     'Max Drawdown', 'Volatility (Ann.)', 'Win Rate', 'Win/Loss Ratio',
     'Avg Win', 'Avg Loss'
@@ -254,9 +254,16 @@ def parse_report_txt(filepath: str, market_label: str = "") -> Dict[str, str]:
         'Avg Win', 'Avg Loss'
     ]
 
+    market_condition = 'Neutral'
+    for line in lines[:45]:
+        if line.startswith('Market Condition') and ':' in line:
+            market_condition = line.split(':', 1)[1].strip()
+            break
+
     row_data = {
         'date': date_part,
         'Market': market_label,
+        'Market Condition': market_condition,
         '_start_time': start_time_str
     }
     for key in target_keys:

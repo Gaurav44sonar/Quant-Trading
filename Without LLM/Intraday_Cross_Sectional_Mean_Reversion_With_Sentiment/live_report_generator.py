@@ -374,13 +374,32 @@ def generate_individual_report_text(
     portfolio_history,
     exposure_pct,
     save_path,
-    sentiment_summary=None
+    sentiment_summary=None,
+    index_return=None
 ):
     """
     Generate the text report for a single universe run and return the text.
     """
     overall = compute_metrics(trades, capital, portfolio_history)
     
+    # Determine Market Condition
+    market_condition = "Neutral"
+    if index_return is not None:
+        if index_return > 0.20:
+            market_condition = "Positive"
+        elif index_return < -0.20:
+            market_condition = "Negative"
+        else:
+            market_condition = "Neutral"
+    else:
+        net_ret = overall.get("net_return_pct", 0.0)
+        if net_ret > 0.20:
+            market_condition = "Positive"
+        elif net_ret < -0.20:
+            market_condition = "Negative"
+        else:
+            market_condition = "Neutral"
+
     v_trades = [t for t in trades if t["group"] == "volatile"]
     volatile_perf = compute_metrics(v_trades, capital, [])
     
@@ -407,6 +426,7 @@ def generate_individual_report_text(
     lines.append("SECTION 1: OVERALL PERFORMANCE SUMMARY")
     lines.append("==================================================")
     lines.append(f"Market                  : {market.upper()}")
+    lines.append(f"Market Condition        : {market_condition}")
     lines.append(f"Universe Type           : {universe_type.upper()}")
     lines.append(f"Total Universe Size     : {universe_size} Stocks")
     lines.append(f"Start Time              : {start_time.strftime('%Y-%m-%d %H:%M:%S') if start_time else 'N/A'}")

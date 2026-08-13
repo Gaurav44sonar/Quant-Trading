@@ -688,7 +688,8 @@ def save_live_state(
     picks: list[dict],
     tracking_states: dict[str, dict],
     volatile_list: list[str],
-    nonvolatile_list: list[str]
+    nonvolatile_list: list[str],
+    last_reselection_hour: int = -1,
 ) -> None:
     """Save the live pipeline execution state to a JSON file."""
     try:
@@ -701,7 +702,8 @@ def save_live_state(
             "picks": picks,
             "tracking_states": serialized_states,
             "volatile_list": volatile_list,
-            "nonvolatile_list": nonvolatile_list
+            "nonvolatile_list": nonvolatile_list,
+            "last_reselection_hour": last_reselection_hour,
         }
         with open(state_file_path, "w", encoding="utf-8") as f:
             json.dump(serialized, f, indent=2)
@@ -750,6 +752,9 @@ def load_live_state(state_file_path: str, today_date: pd.Timestamp) -> dict | No
                         parsed_exits.append(tuple(x))
                 tstate["exits"] = parsed_exits
                 
+        # Restore last_reselection_hour (default -1 for backward-compat with old state files)
+        if "last_reselection_hour" not in state:
+            state["last_reselection_hour"] = -1
         log.info(f"[STATE] Loaded execution state for today from {state_file_path}")
         return state
     except Exception as e:
@@ -868,6 +873,7 @@ def run_universe_session(
     time_entry = None
     time_flatten = None
     last_trade_date = None
+    last_reselection_hour = -1  # tracks which clock-hour last ran re-selection
     
     portfolio_history = []
     exposure_pcts = []
@@ -925,6 +931,7 @@ def run_universe_session(
                     tracking_states = saved_state["tracking_states"]
                     volatile_list = saved_state.setdefault("volatile_list", [])
                     nonvolatile_list = saved_state.setdefault("nonvolatile_list", [])
+                    last_reselection_hour = saved_state.get("last_reselection_hour", -1)
                     watchlist = volatile_list
                 else:
                     now_time = now.time()
@@ -951,7 +958,7 @@ def run_universe_session(
                         raise e
                         
                     log.info(f"Execution schedule locked: Start/Entry={time_entry.strftime('%H:%M:%S')} | Flatten/Exit={time_flatten.strftime('%H:%M:%S')}")
-                    save_live_state(state_file_path, today_date, time_entry, time_flatten, trades_entered, picks, tracking_states, volatile_list, nonvolatile_list)
+                    save_live_state(state_file_path, today_date, time_entry, time_flatten, trades_entered, picks, tracking_states, volatile_list, nonvolatile_list, last_reselection_hour)
                     
             time_recovery_threshold = (datetime.combine(now.date(), time_entry) + timedelta(minutes=5)).time()
             time_market_close = market_close
@@ -1145,7 +1152,8 @@ def run_universe_session(
                             log.warning(f"Could not fetch Alpaca positions to sync entry prices: {e}")
                             
                     trades_entered = True
-                    save_live_state(state_file_path, today_date, time_entry, time_flatten, trades_entered, picks, tracking_states, volatile_list, nonvolatile_list)
+                    last_reselection_hour = now.hour
+                    save_live_state(state_file_path, today_date, time_entry, time_flatten, trades_entered, picks, tracking_states, volatile_list, nonvolatile_list, last_reselection_hour)
                     
                 if run_once:
                     log.info("[RUN ONCE] Entry stage complete. Exiting script.")
@@ -1154,11 +1162,161 @@ def run_universe_session(
             # 2. INTRADAY MONITORING STAGE
             elif time_entry <= current_time < time_flatten and trades_entered:
                 active_count = sum(1 for s in tracking_states.values() if s["active"])
+
+                # ── HOURLY RE-SELECTION ─────────────────────────────────────
+                # Every clock-hour boundary, re-run stock screening and enter
+                # new picks alongside any still-open positions from prior cycles.
+                current_hour = current_time.hour
+                mins_to_flatten = (
+                    market_tz.localize(datetime.combine(now.date(), time_flatten)) - now
+                ).total_seconds() / 60.0
+
+                if current_hour > last_reselection_hour and mins_to_flatten >= 60:
+                    log.info(f"\n[HOURLY RE-SELECTION] Hour boundary {current_hour}:00 reached. "
+                             f"Re-running stock selection ({active_count} positions currently active)...")
+                    last_reselection_hour = current_hour
+                    try:
+                        # 1. Re-screen top 40 volatile stocks
+                        new_volatile_list, _ = select_top_40_volatile(market, market_tz)
+                        watchlist = list(dict.fromkeys(volatile_list + new_volatile_list))  # preserve + extend
+                        volatile_list = new_volatile_list
+                        selection_timestamp = datetime.now(market_tz)
+
+                        # 2. Fetch fresh 5-min panels
+                        re_panels, re_nifty_close = fetch_yfinance_panels(
+                            tickers=new_volatile_list,
+                            index_ticker=index_ticker,
+                            lookback_days=35,
+                            market_tz=market_tz,
+                            market_open=market_open,
+                            market_close=market_close
+                        )
+                        re_atr_values = compute_watchlist_atr(re_panels, today_date)
+
+                        re_filtered_panels = {}
+                        for key in ["close", "open", "high", "low", "volume"]:
+                            cols = [c for c in new_volatile_list if c in re_panels[key].columns]
+                            re_filtered_panels[key] = re_panels[key][cols].copy()
+
+                        # 3. Compute remaining investable capital
+                        invested_capital = sum(
+                            s["qty"] * s["entry_price"]
+                            for s in tracking_states.values()
+                            if s.get("active") and s.get("qty", 0) > 0
+                        )
+                        remaining_capital = max(capital - invested_capital, 0.0)
+                        if remaining_capital < 1000:
+                            log.info("[HOURLY RE-SELECTION] Remaining capital too low for new positions. Skipping.")
+                        else:
+                            # 4. Run StockPicker on remaining capital
+                            re_picker = StockPicker(
+                                panels=re_filtered_panels,
+                                nifty_close=re_nifty_close,
+                                capital=remaining_capital,
+                                n_picks=n_picks,
+                                min_score=min_score,
+                                min_avg_volume=200_000,
+                                momentum_lookback=5,
+                                momentum_threshold=momentum_threshold,
+                                max_per_sector=max_per_sector,
+                                market=market,
+                                min_basket_size=min_basket_size,
+                                momentum_mult=momentum_mult,
+                                use_blacklist=use_blacklist,
+                            )
+                            re_picks = re_picker.pick(today_date)
+
+                            # 5. Exclude tickers already tracked this session
+                            existing_tickers = set(tracking_states.keys())
+                            re_picks = [p for p in re_picks if p["ticker"] not in existing_tickers]
+
+                            if not re_picks:
+                                log.info("[HOURLY RE-SELECTION] No new picks after excluding already-traded tickers.")
+                            else:
+                                # 6. Set entry prices from current bar
+                                re_day_mask = re_filtered_panels["open"].index.normalize() == today_date
+                                re_day_open = re_filtered_panels["open"][re_day_mask]
+                                if len(re_day_open) > 0:
+                                    re_entry_prices = re_day_open.iloc[-1]
+                                else:
+                                    re_entry_prices = re_filtered_panels["close"].iloc[-1]
+                                re_per_stock_capital = remaining_capital / len(re_picks)
+                                for pick in re_picks:
+                                    ticker = pick["ticker"]
+                                    price = re_entry_prices.get(ticker, np.nan)
+                                    if not pd.isna(price) and price > 0:
+                                        pick["entry_price"] = float(price)
+                                        pick["shares"] = int(re_per_stock_capital / price)
+                                    pick["group"] = "volatile"
+                                    pick["atr_value"] = re_atr_values.get(ticker, None)
+
+                                re_picks = [p for p in re_picks if p.get("shares", 0) > 0]
+
+                                if not re_picks:
+                                    log.info("[HOURLY RE-SELECTION] No valid picks with valid share counts.")
+                                else:
+                                    # 7. Submit new entry orders (pure alpha — no Sentiment, no LLM)
+                                    log.info(f"[HOURLY RE-SELECTION] Entering {len(re_picks)} new position(s): "
+                                             f"{[p['ticker'] for p in re_picks]}")
+                                    for pick in re_picks:
+                                        ticker = pick["ticker"]
+                                        qty = pick["shares"]
+                                        success = execute_order(trading_client, ticker, qty, OrderSide.BUY, dry_run)
+                                        if success:
+                                            tracking_states[ticker] = {
+                                                "ticker": ticker,
+                                                "group": "volatile",
+                                                "entry_price": pick["entry_price"],
+                                                "initial_qty": qty,
+                                                "qty": qty,
+                                                "high_water": pick["entry_price"],
+                                                "atr_value": pick.get("atr_value"),
+                                                "sl1_done": False,
+                                                "sl2_done": False,
+                                                "sl3_done": False,
+                                                "pt1_done": False,
+                                                "pt2_done": False,
+                                                "pt3_done": False,
+                                                "sl_exited": 0.0,
+                                                "time_exit_1_done": False,
+                                                "time_exit_2_done": False,
+                                                "active": True,
+                                                "exit_reason": "",
+                                                "exits": [],
+                                                "entry_time": datetime.now(market_tz)
+                                            }
+                                            picks.append(pick)
+
+                                    # Sync entry prices with broker
+                                    if not dry_run and trading_client is not None and re_picks:
+                                        time.sleep(3)
+                                        try:
+                                            re_positions = trading_client.get_all_positions()
+                                            re_pos_dict = {p.symbol: float(p.avg_entry_price) for p in re_positions}
+                                            for pick in re_picks:
+                                                t = pick["ticker"]
+                                                if t in re_pos_dict and t in tracking_states:
+                                                    tracking_states[t]["entry_price"] = re_pos_dict[t]
+                                                    tracking_states[t]["high_water"] = re_pos_dict[t]
+                                        except Exception as _ps:
+                                            log.warning(f"[HOURLY RE-SELECTION] Price sync failed: {_ps}")
+
+                                    save_live_state(
+                                        state_file_path, today_date, time_entry, time_flatten,
+                                        trades_entered, picks, tracking_states,
+                                        volatile_list, nonvolatile_list, last_reselection_hour
+                                    )
+                                    active_count = sum(1 for s in tracking_states.values() if s["active"])
+                                    log.info(f"[HOURLY RE-SELECTION] Complete. Total active positions: {active_count}")
+                    except Exception as _re_err:
+                        log.warning(f"[HOURLY RE-SELECTION] Failed with error: {_re_err}. Continuing with existing positions.")
+                # ── END HOURLY RE-SELECTION ────────────────────────────────
+
                 if active_count == 0:
-                    log.info(f"No active positions remaining. Sleeping until scheduled flatten close at {time_flatten.strftime('%I:%M %p')}...")
+                    log.info(f"No active positions remaining. Sleeping 30s (next hourly check at hour {last_reselection_hour + 1}:00)...")
                     time.sleep(30)
                     continue
-                    
+
                 mins_now = now.minute
                 secs_now = now.second
                 sleep_sec = ((4 - (mins_now % 5)) * 60) + (60 - secs_now) + 20
@@ -1477,7 +1635,7 @@ def run_universe_session(
                         continue
                             
                 # Save state
-                save_live_state(state_file_path, today_date, time_entry, time_flatten, trades_entered, picks, tracking_states, volatile_list, nonvolatile_list)
+                save_live_state(state_file_path, today_date, time_entry, time_flatten, trades_entered, picks, tracking_states, volatile_list, nonvolatile_list, last_reselection_hour)
                 current_portfolio_value = calculate_portfolio_value(capital, tracking_states, current_bar_check_prices)
                 portfolio_history.append((last_timestamp, current_portfolio_value))
                 
@@ -1589,6 +1747,13 @@ def run_universe_session(
             
         exposure_pct = np.mean(exposure_pcts) if exposure_pcts else 0.0
         
+        index_ret_val = None
+        if 'index_close_series' in locals() and index_close_series is not None and len(index_close_series) >= 2:
+            try:
+                index_ret_val = ((float(index_close_series.iloc[-1]) - float(index_close_series.iloc[0])) / float(index_close_series.iloc[0])) * 100.0
+            except Exception:
+                pass
+
         log.info(f"Report text generation started for VOLATILE...")
         from live_report_generator import generate_individual_report_text
         session_metrics, report_text = generate_individual_report_text(
@@ -1613,6 +1778,7 @@ def run_universe_session(
             exposure_pct=exposure_pct,
             save_path=report_save_path if report_save_path else "",
             sentiment_summary=sentiment_report,
+            index_return=index_ret_val,
         )
         
         if report_save_path:

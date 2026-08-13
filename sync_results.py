@@ -30,13 +30,21 @@ log = logging.getLogger("sync_results")
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 STRATEGY_FOLDERS = {
-    "without_sentiment": "Without LLM/Intraday_Cross_Sectional_Mean_Reversion_Without_Sentiment",
-    "with_sentiment":    "Without LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment",
+    # Without LLM strategies
+    "without_sentiment":         "Without LLM/Intraday_Cross_Sectional_Mean_Reversion_Without_Sentiment",
+    "with_sentiment":            "Without LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment",
+    # With LLM strategies
+    "with_llm_with_sentiment":   "With LLM/Intraday_Cross_Sectional_Mean_Reversion_With_Sentiment",
+    "with_llm_without_sentiment": "With LLM/Intraday_Cross_Sectional_Mean_Reversion_Without_Sentiment",
 }
 
 SHEET_TAB_MAP = {
-    "without_sentiment": "Without LLM Without Sentiment",
-    "with_sentiment":    "Without LLM With Sentiment",
+    # Without LLM
+    "without_sentiment":         "Without LLM Without Sentiment",
+    "with_sentiment":            "Without LLM With Sentiment",
+    # With LLM
+    "with_llm_with_sentiment":   "With LLM With Sentiment",
+    "with_llm_without_sentiment": "With LLM Without Sentiment",
 }
 
 
@@ -133,7 +141,8 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument(
         "--strategy",
         required=True,
-        choices=["without_sentiment", "with_sentiment"],
+        choices=["without_sentiment", "with_sentiment",
+                 "with_llm_with_sentiment", "with_llm_without_sentiment"],
         help="Which strategy's results to sync.",
     )
     p.add_argument(

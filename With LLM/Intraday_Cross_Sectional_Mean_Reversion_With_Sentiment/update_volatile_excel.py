@@ -33,8 +33,15 @@ def parse_report_file(filepath):
         'Avg Win', 'Avg Loss'
     ]
 
+    market_condition = 'Neutral'
+    for line in lines[:45]:
+        if line.startswith('Market Condition') and ':' in line:
+            market_condition = line.split(':', 1)[1].strip()
+            break
+
     row_data = {
         'date': date_part,
+        'Market Condition': market_condition,
         '_start_time': start_time_str
     }
     for key in target_keys:
@@ -68,7 +75,7 @@ def style_and_save_excel(df, save_paths):
     Saves DataFrame to specified Excel file paths with clean formatting.
     """
     columns_order = [
-        'date', 'Avg Return', 'Cumulative Return', 'Best Trade', 'Worst Trade',
+        'date', 'Market Condition', 'Avg Return', 'Cumulative Return', 'Best Trade', 'Worst Trade',
         'Total P&L', 'CAGR (annualized)', 'Sharpe Ratio', 'Sortino Ratio',
         'Max Drawdown', 'Volatility (Ann.)', 'Win Rate', 'Win/Loss Ratio',
         'Avg Win', 'Avg Loss'
