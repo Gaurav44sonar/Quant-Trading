@@ -111,6 +111,8 @@ def get_gspread_client(creds_path: str):
 def ensure_worksheet(spreadsheet, tab_name: str):
     """
     Ensures a worksheet tab exists in the Google Spreadsheet and has the standard header row.
+    If historical rows are missing the 'Market Condition' column, automatically migrates
+    them by inserting 'N/A' into column C so all columns align under COLUMNS_ORDER.
     """
     try:
         worksheet = spreadsheet.worksheet(tab_name)
@@ -118,19 +120,40 @@ def ensure_worksheet(spreadsheet, tab_name: str):
         # Create worksheet if missing
         worksheet = spreadsheet.add_worksheet(title=tab_name, rows=500, cols=len(COLUMNS_ORDER))
 
-    # Check header
-    existing_headers = worksheet.row_values(1)
-    if not existing_headers or existing_headers != COLUMNS_ORDER:
+    all_values = worksheet.get_all_values()
+    if not all_values:
         worksheet.update('A1', [COLUMNS_ORDER])
-        try:
-            # Basic header styling (dark header format)
-            worksheet.format('A1:P1', {
-                "backgroundColor": {"red": 0.12, "green": 0.31, "blue": 0.47},
-                "textFormat": {"bold": True, "foregroundColor": {"red": 1.0, "green": 1.0, "blue": 1.0}},
-                "horizontalAlignment": "CENTER"
-            })
-        except Exception as ex_fmt:
-            log.debug(f"Header formatting failed (non-critical): {ex_fmt}")
+    else:
+        existing_headers = all_values[0]
+        # Check if 'Market Condition' is missing from existing headers (old 16-col schema)
+        if 'Market Condition' not in existing_headers:
+            log.info(f"Migrating historical rows for tab '{tab_name}' — inserting 'Market Condition' = 'N/A'...")
+            updated_rows = [COLUMNS_ORDER]
+            for row in all_values[1:]:
+                if len(row) >= 2:
+                    # Old schema: [date, Market, Avg Return, ...] -> insert 'N/A' at index 2
+                    new_row = [row[0], row[1], 'N/A'] + row[2:]
+                    # Ensure row length matches COLUMNS_ORDER
+                    if len(new_row) < len(COLUMNS_ORDER):
+                        new_row += [''] * (len(COLUMNS_ORDER) - len(new_row))
+                    else:
+                        new_row = new_row[:len(COLUMNS_ORDER)]
+                    updated_rows.append(new_row)
+            
+            worksheet.clear()
+            worksheet.update('A1', updated_rows, value_input_option='USER_ENTERED')
+        elif existing_headers != COLUMNS_ORDER:
+            worksheet.update('A1', [COLUMNS_ORDER])
+
+    try:
+        # Basic header styling (dark header format)
+        worksheet.format('A1:Q1', {
+            "backgroundColor": {"red": 0.12, "green": 0.31, "blue": 0.47},
+            "textFormat": {"bold": True, "foregroundColor": {"red": 1.0, "green": 1.0, "blue": 1.0}},
+            "horizontalAlignment": "CENTER"
+        })
+    except Exception as ex_fmt:
+        log.debug(f"Header formatting failed (non-critical): {ex_fmt}")
 
     return worksheet
 

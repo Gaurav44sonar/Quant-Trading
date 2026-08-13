@@ -2,12 +2,12 @@
 test_sheets_sync.py
 ===================
 Quick test to verify Google Sheets sync works correctly.
-Creates a dummy trading result and pushes it to the sheet.
+Creates dummy trading results and pushes to all 4 strategy tabs.
 
 Run locally:
     python test_sheets_sync.py
 
-If successful, you'll see a test row appear in your Google Sheet.
+If successful, you'll see test rows appear in your Google Sheet tabs.
 """
 
 import os
@@ -46,12 +46,13 @@ if not sheet_id:
     sys.exit(1)
 
 # ── Create dummy test rows ────────────────────────────────────────────────────
-from google_sheets_sync import sync_dataframe_to_tab, COLUMNS_ORDER
+from google_sheets_sync import sync_dataframe_to_tab
 
 test_rows = [
     {
-        "date": "2026-08-10",
+        "date": "2026-08-13",
         "Market": "TEST-INDIA",
+        "Market Condition": "Positive",
         "Avg Return": "0.85%",
         "Cumulative Return": "1.20%",
         "Best Trade": "2.50%",
@@ -68,8 +69,9 @@ test_rows = [
         "Avg Loss": "-0.55%",
     },
     {
-        "date": "2026-08-10",
+        "date": "2026-08-13",
         "Market": "TEST-US",
+        "Market Condition": "Neutral",
         "Avg Return": "0.72%",
         "Cumulative Return": "0.95%",
         "Best Trade": "3.10%",
@@ -89,10 +91,12 @@ test_rows = [
 
 df = pd.DataFrame(test_rows)
 
-# ── Push to both tabs ─────────────────────────────────────────────────────────
+# ── Push to all 4 strategy tabs ──────────────────────────────────────────────
 tabs = [
     "Without LLM Without Sentiment",
     "Without LLM With Sentiment",
+    "With LLM Without Sentiment",
+    "With LLM With Sentiment",
 ]
 
 all_ok = True
