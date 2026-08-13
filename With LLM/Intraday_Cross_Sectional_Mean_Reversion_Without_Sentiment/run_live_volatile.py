@@ -1833,9 +1833,15 @@ def run_universe_session(
         exposure_pct = np.mean(exposure_pcts) if exposure_pcts else 0.0
         
         index_ret_val = None
-        if 'index_close_series' in locals() and index_close_series is not None and len(index_close_series) >= 2:
+        idx_src = None
+        if 'idx_day_close' in locals() and idx_day_close is not None and len(idx_day_close) >= 2:
+            idx_src = idx_day_close
+        elif 'index_close_series' in locals() and index_close_series is not None and len(index_close_series) >= 2:
+            idx_src = index_close_series
+
+        if idx_src is not None and len(idx_src) >= 2:
             try:
-                index_ret_val = ((float(index_close_series.iloc[-1]) - float(index_close_series.iloc[0])) / float(index_close_series.iloc[0])) * 100.0
+                index_ret_val = ((float(idx_src.iloc[-1]) - float(idx_src.iloc[0])) / float(idx_src.iloc[0])) * 100.0
             except Exception:
                 pass
 
