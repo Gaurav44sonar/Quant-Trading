@@ -875,6 +875,8 @@ def run_universe_session(
     time_flatten = None
     last_trade_date = None
     last_reselection_hour = -1  # tracks which clock-hour last ran re-selection
+    no_picks_retry_count = 0     # how many times we've retried after finding no picks
+    NO_PICKS_MAX_RETRIES = 12    # 12 × 5 min = ~1 hour of retries before giving up
     
     portfolio_history = []
     exposure_pcts = []
@@ -1036,9 +1038,25 @@ def run_universe_session(
                 
                 picks = picker.pick(today_date)
                 if not picks:
-                    log.warning("No stock picks identified today. Suspending trading for this universe.")
-                    termination_reason = "NO_PICKS_IDENTIFIED"
-                    break
+                    no_picks_retry_count += 1
+                    if no_picks_retry_count <= NO_PICKS_MAX_RETRIES:
+                        log.warning(
+                            "No stock picks identified today (attempt %d/%d). "
+                            "This is likely a data-lag issue at market open. "
+                            "Retrying in 5 minutes...",
+                            no_picks_retry_count, NO_PICKS_MAX_RETRIES
+                        )
+                        time.sleep(300)  # wait 5 minutes then re-enter loop
+                        continue
+                    else:
+                        log.warning(
+                            "No stock picks identified after %d retries (~%d min). "
+                            "Suspending trading for this universe.",
+                            NO_PICKS_MAX_RETRIES, NO_PICKS_MAX_RETRIES * 5
+                        )
+                        termination_reason = "NO_PICKS_IDENTIFIED"
+                        break
+                no_picks_retry_count = 0  # reset on success
                     
                 # Override entry price and shares
                 if len(filtered_panels["open"]) > 0:
